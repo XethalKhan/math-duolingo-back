@@ -1,0 +1,31 @@
+[{
+  "_id": {
+    "$oid": "5f86e2ba6f629a57e181803f"
+  },
+  "name": "Definition",
+  "description": "Mathematical definitions"
+},{
+  "_id": {
+    "$oid": "5f86e2d26f629a57e1818040"
+  },
+  "name": "Theorem",
+  "description": "Statements that are allways true"
+},{
+  "_id": {
+    "$oid": "5fce1ad750918c0e070c2bd1"
+  },
+  "name": "Remark",
+  "description": "Observation that isn’t formally defined like a theorem, lemma, proposition etc. but is something to which you wish to draw attention and to which you may wish to be able to refer."
+},{
+  "_id": {
+    "$oid": "5fdf367b8fd516682f19bd10"
+  },
+  "name": "Conjecture",
+  "description": "A conjecture is a conclusion or a proposition which is suspected to be true due to preliminary supporting evidence, but for which no proof or disproof has yet been found"
+},{
+  "_id": {
+    "$oid": "5fe1efecd0341607b8b5932f"
+  },
+  "name": "Corollary",
+  "description": "A corollary is a theorem that follows very easily from another theorem. For this reason, corollaries frequently do not have proofs. You are expected to easily and quickly see how a previous theorem implies the corollary."
+}]

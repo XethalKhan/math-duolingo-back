@@ -1,0 +1,182 @@
+[{
+  "_id": {
+    "$oid": "5fc16c76d6238b42dcbf30e5"
+  },
+  "grid": [
+    {
+      "items": [
+        {
+          "name": "Basic concepts of set theory, informally",
+          "id": {
+            "$oid": "5f82e5e39676067258e11baa"
+          }
+        }
+      ],
+      "comment": ""
+    },
+    {
+      "items": [
+        {
+          "name": "Operations on set theory, informally",
+          "id": {
+            "$oid": "5fdc923e2fed7f0ae02b6763"
+          }
+        },
+        {
+          "name": "Algebraic properties of sets",
+          "id": {
+            "$oid": "5fdf38326ac1d321209ce962"
+          }
+        }
+      ],
+      "comment": ""
+    },
+    {
+      "items": [
+        {
+          "name": "Basic Concepts of the Propositional Calculus",
+          "id": {
+            "$oid": "5fdf44226ac1d321209ce967"
+          }
+        },
+        {
+          "name": "Tautology, Equivalence, the Conditional, and Biconditional",
+          "id": {
+            "$oid": "5fdfaa56ffd69e16202be781"
+          }
+        }
+      ],
+      "comment": ""
+    },
+    {
+      "items": [
+        {
+          "name": "Basic Concepts of the Predicate Calculus",
+          "id": {
+            "$oid": "5fe4af304cb8154cf8dbfff0"
+          }
+        },
+        {
+          "name": "Quantification and some Theorems",
+          "id": {
+            "$oid": "5fea2f5831ec394e806227ad"
+          }
+        }
+      ],
+      "comment": ""
+    },
+    {
+      "items": [
+        {
+          "name": "Infinite Unions and Intersections",
+          "id": {
+            "$oid": "5ff36e0d0e74e25c8c735552"
+          }
+        }
+      ],
+      "comment": ""
+    }
+  ],
+  "name": "Introduction to Set theory and Logic",
+  "description": "Small introduction in Set theory and Logic, to make transition into formalism easier",
+  "img": "set_theory.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fd757e9683da93940cb8006"
+  },
+  "name": "Introduction to Linear Algebra",
+  "description": "Introductory course to Linear Algebra. Attempt at moderate formalism. Using complex numbers.",
+  "grid": [
+    {
+      "items": [
+        {
+          "name": "Solving systems of linear equations",
+          "id": {
+            "$oid": "5fd49a0d2642a13f3472fdca"
+          }
+        }
+      ],
+      "comment": ""
+    },
+    {
+      "items": [
+        {
+          "name": "Reduced Row-Echelon Form",
+          "id": {
+            "$oid": "5fd76de7683da93940cb8007"
+          }
+        },
+        {
+          "name": "Types of Solution Sets",
+          "id": {
+            "$oid": "5fd9e0e408cdd845506e6de5"
+          }
+        }
+      ],
+      "comment": ""
+    },
+    {
+      "items": [
+        {
+          "name": "Homogeneous Systems of Equations",
+          "id": {
+            "$oid": "5fe3904eac3d111dc0ab1d73"
+          }
+        },
+        {
+          "name": "Nonsingular Matrices",
+          "id": {
+            "$oid": "5fecf2ba1bb69d3cdc2c4072"
+          }
+        }
+      ],
+      "comment": ""
+    },
+    {
+      "items": [
+        {
+          "name": "Vector operations",
+          "id": {
+            "$oid": "5fedcb9fcae03c0a1846c1b0"
+          }
+        },
+        {
+          "name": "Linear combinations",
+          "id": {
+            "$oid": "5ffc8e1c5cc34255587754f7"
+          }
+        },
+        {
+          "name": "Spanning sets",
+          "id": {
+            "$oid": "60007ad23391b6060415740e"
+          }
+        }
+      ],
+      "comment": ""
+    },
+    {
+      "items": [
+        {
+          "name": "Linear Independence",
+          "id": {
+            "$oid": "6006da70a5a9a54e30e1b7ff"
+          }
+        }
+      ],
+      "comment": ""
+    }
+  ],
+  "img": "linear_algebra.png",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "600978e0780a9e33e0a042cc"
+  },
+  "name": "Abstract Algebra",
+  "description": "Modern algebra course, based on book \"Algebra\" by Michael Artin. Introducing Groups using Linear algebra",
+  "grid": [],
+  "img": "abstract_algebra.png",
+  "__v": 0
+}]

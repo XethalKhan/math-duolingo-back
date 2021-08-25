@@ -1,0 +1,1211 @@
+[{
+  "_id": {
+    "$oid": "5f72f42f1f7bf4e1c3d20ce3"
+  },
+  "name": "Set",
+  "type": "Remark",
+  "description": "Informal definition of set",
+  "text": "A **set** may be thought of as a well-defined collection of objects. The objects in the set are called **elements** of the set.\n\n**Elements** of a set may be any kind of objects at all (number, names, ...) even other sets may be some or all elements of set.\n\n$A, B, X, Y = \\text{names of sets}$  \n$a, b, x, y = \\text{possible elements of sets}$  \n$a \\in A = \\text{element } a \\text{ belongs to set } A$  \n$a \\notin A = \\text{element } a \\text{ does not belong to set } A$",
+  "comment": "Advantage of having informal definition of term set is that, through it, we can introduce other terminology related to sets. The term **element** is one example, and **well-defined** is another.",
+  "reference": "### Introduction to set theory 3. ed. - Hrbacek K., Jech T.",
+  "__v": "0"
+},{
+  "_id": {
+    "$oid": "5fce1c15b09cb516f85de5d3"
+  },
+  "name": "Well-defined",
+  "type": "Remark",
+  "description": "Informal set theory remark",
+  "text": "Term **well-defined** relates to the primary requirement for any description (of set): *Given an object, we must be able to determine whether or not the object lies in described set*",
+  "comment": "",
+  "reference": "### Introduction to set theory 3. ed. - Hrbacek K., Jech T.",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fd499832642a13f3472fdc9"
+  },
+  "name": "System of linear equations",
+  "type": "Definition",
+  "description": "Begginer friendly Linear Algebra",
+  "text": "A system of linear equations is a collection of $m$ equations in the variable quantities $x_1, x_2, x_3, . . . , x_n$ of the form  \n$a_\\text{11} x_1 + a_\\text{12} x_2  + a_\\text{13} x_3 +  . . . + a_\\text{1n} x_n= b_1$  \n$a_\\text{21} x_1 + a_\\text{22} x_2  + a_\\text{23} x_3 +  . . . + a_\\text{2n} x_n= b_2$   \n$a_\\text{31} x_1 + a_\\text{32} x_2  + a_\\text{33} x_3 +  . . . + a_\\text{3n} x_n= b_3$  \n.    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    \n.    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    \n.    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   \n$a_\\text{m1} x_1 + a_\\text{m2} x_2  + a_\\text{m3} x_3 +  . . . + a_\\text{mn} x_n= b_m$  \n  \nwhere the values of $a_\\text{ij}$, $b_i$ and $x_j$ for $1 \\leq i \\leq m \\text{,} 1 \\leq j \\leq n$, are from set of complex numbers $\\mathbb{C}$.",
+  "comment": "Do not let the mention of the complex numbers, $\\mathbb{C}$, rattle you. We want to leave the possibility of complex numbers open.",
+  "reference": "[First course in linear algebra - Section: Solving Systems of Linear Equations](http://linear.ups.edu/html/section-SSLE.html)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fd50f9af49bb0086c98e4fd"
+  },
+  "name": "Solution of a System of Linear Equations",
+  "type": "Definition",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "A **solution** of a system of linear equations in $n$ variables, $x_1, x_2, x_3, . . . , x_n$, such as the system   \n$a_\\text{11} x_1 + a_\\text{12} x_2  + a_\\text{13} x_3 +  . . . + a_\\text{1n} x_n= b_1$  \n$a_\\text{21} x_1 + a_\\text{22} x_2  + a_\\text{23} x_3 +  . . . + a_\\text{2n} x_n= b_2$   \n$a_\\text{31} x_1 + a_\\text{32} x_2  + a_\\text{33} x_3 +  . . . + a_\\text{3n} x_n= b_3$  \n.    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    \n.    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    \n.    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   \n$a_\\text{m1} x_1 + a_\\text{m2} x_2  + a_\\text{m3} x_3 +  . . . + a_\\text{mn} x_n= b_m$  \n  \nis an ordered list of $n$ complex numbers $s_1, s_2, s_3, . . . , s_n$ such that if we substitute $s_1$ for $x_1$, $s_2$ for $x_2$, $s_3$ for $x_3$ . . . $s_n$ for $x_n$, then for every equation of the system the left side will equal the right side, i.e. each equation is true simultaneously.",
+  "comment": "More typically, we will write a solution in a form like $x_1 = 12 \\text{, } x_2 = \\text{-} 7 \\text{, } x_3 = 2$ to mean that $s_1 = 12 \\text{, } s_2 = \\text{-} 7 \\text{, } s_3 = 2$\n ",
+  "reference": "[First course in linear algebra - Section: Solving Systems of Linear Equations](http://linear.ups.edu/html/section-SSLE.html)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fd51173f49bb0086c98e4fe"
+  },
+  "name": "Solution Set of a System of Linear Equations",
+  "type": "Definition",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "The **solution set** of a linear system of equations is the set which contains every solution to the system, and nothing more.",
+  "comment": "Be aware that a solution set can be infinite, or there can be no solutions, in which case we write the solution set as the empty set, $\\emptyset = \\{ \\}$",
+  "reference": "[First course in linear algebra - Section: Solving Systems of Linear Equations](http://linear.ups.edu/html/section-SSLE.html)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fd512adf49bb0086c98e4ff"
+  },
+  "name": "Equivalent Systems",
+  "type": "Definition",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "Two systems of linear equations are **equivalent** if their solution sets are equal.",
+  "comment": "Notice here that the two systems of equations could *look* very different (i.e. not be equal), but still have equal solution sets, and we would then call the systems equivalent. Two linear equations in two variables might be plotted as two lines that intersect in a single point. A different system, with three equations in two variables might have a plot that is three lines, all intersecting at a common point, with this common point identical to the intersection point for the first system. By our definition, we could then say these two very different looking systems of equations are equivalent, since they have identical solution sets. It is really like a weaker form of equality, where we allow the systems to be different in some respects, but we use the term equivalent to highlight the situation when their solution sets are equal.",
+  "reference": "[First course in linear algebra - Section: Solving Systems of Linear Equations](http://linear.ups.edu/html/section-SSLE.html)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fd514a4f49bb0086c98e500"
+  },
+  "name": "Equation Operations",
+  "type": "Definition",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "Given a system of linear equations, the following three operations will transform the system into a different one, and each operation is known as an **equation operation**:  \n1. Swap the locations of two equations in the list of equations.  \n2. Multiply each term of an equation by a nonzero quantity.  \n3. Multiply each term of one equation by some quantity, and add these terms to a second equation, on both sides of the equality. Leave the first equation the same after this operation, but replace the second equation by the new one.",
+  "comment": "Given a system of linear equations that looks difficult to solve, we would like to have an equivalent system that is easy to solve. Since the systems will have equal solution sets, we can solve the “easy” system and get the solution set to the “difficult” system. These are the tools for making this strategy viable.",
+  "reference": "[First course in linear algebra](http://linear.ups.edu/html/section-SSLE.html)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fd51fc4f49bb0086c98e501"
+  },
+  "name": "Equation Operations Preserve Solution Sets",
+  "type": "Theorem",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "If we apply one of the three **equation operations** to a **system of linear equations**, then the original system and the transformed system are equivalent.",
+  "comment": "We take each equation operation in turn and show that the solution sets of the two systems are equal, using the definition of **set equality**:  \n  \n$\\text{1.}$ It will not be our habit in proofs to resort to saying statements are “obvious,” but in this case, it should be. There is nothing about the order in which we write linear equations that affects their solutions, so the solution set will be equal if the systems only differ by a rearrangement of the order of the equations.  \n  \n$\\text{2.}$ Suppose $\\alpha \\not = 0$ is a number. Let us choose to multiply the terms of equation $i$ by $\\alpha$ to build the new system of equations   \n$a_{11} x_1 + a_{12} x_2  + a_{13} x_3 +  . . . + a_{1n} x_n= b_1$  \n$a_{21} x_1 + a_{22} x_2  + a_{23} x_3 +  . . . + a_{2n} x_n= b_2$   \n$a_{31} x_1 + a_{32} x_2  + a_{33} x_3 +  . . . + a_{3n} x_n= b_3$  \n.    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    \n$\\alpha a_{i1} x_1 + \\alpha a_{i2} x_2  + \\alpha a_{i3} x_3 +  . . . + \\alpha a_{in} x_n= \\alpha b_i$    \n.    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   \n$a_{m1} x_1 + a_{m2} x_2  + a_{m3} x_3 +  . . . + a_{mn} x_n= b_m$  \n  \nLet $S$ denote the solutions to the system in the statement of the theorem, and let $T$ denote the solutions to the transformed system.  \n     \n**Show $S \\subset T$:**  \nSuppose $(x_1, x_2, x_3, . . . , x_n) = (\\beta_1, \\beta_2, \\beta_3, . . . , \\beta_n) \\in S$ is a solution to the original system. Ignoring the $i\\text{-th}$ equation for a moment we know it makes all the other equations of the transformed system true. We also know that  \n  \n$a_{i1} x_1 + a_{i2} x_2  + a_{i3} x_3 +  . . . + a_{in} x_n= b_i$   \nwhich we can multiply by $\\alpha$ to make   \n$\\alpha a_{i1} x_1 + \\alpha a_{i2} x_2  + \\alpha a_{i3} x_3 +  . . . + \\alpha a_{in} x_n= \\alpha b_i$  \n  \nThis says that the $i\\text{-th}$ equation of the transformed system is also true, so we have established that  $(\\beta_1, \\beta_2, \\beta_3, . . . , \\beta_n) \\in T \\text{ and therefore } S \\subset T$  \n  \n**Now show that $T \\subset S$:**   \nSuppose $(x_1, x_2, x_3, . . . , x_n) = (\\beta_1, \\beta_2, \\beta_3, . . . , \\beta_n) \\in S$ is a solution to the transformed system. Ignoring the $i\\text{-th}$ equation for a moment, we know it makes all the other equations of the original system true. We also know that  \n  \n$\\alpha a_{i1} x_1 + \\alpha a_{i2} x_2  + \\alpha a_{i3} x_3 +  . . . + \\alpha a_{in} x_n= \\alpha b_i$  \nwhich we can multiply by  $\\frac{1}{\\alpha}$, since $\\alpha \\not = 0$, to get  \n$a_{i1} x_1 + a_{i2} x_2  + a_{i3} x_3 +  . . . + a_{in} x_n= b_i$  \n  \nThis says that the $i\\text{-th}$ equation of the original system is also true, so we have established that $(\\beta_1, \\beta_2, \\beta_3, . . . , \\beta_n) \\in S \\text{ , and therefore }T \\subset S$.  \n\n$\\text{3.}$ Suppose $\\alpha$ is a number. Let us choose to multiply the terms of equation $i \\text{ by } \\alpha$ and add them to equation $j$ in order to build the new system of equations  \n$a_{11} x_1 + a_{12} x_2  + a_{13} x_3 +  . . . + a_{1n} x_n= b_1$  \n$a_{21} x_1 + a_{22} x_2  + a_{23} x_3 +  . . . + a_{2n} x_n= b_2$   \n$a_{31} x_1 + a_{32} x_2  + a_{33} x_3 +  . . . + a_{3n} x_n= b_3$  \n.    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    \n$(\\alpha a_{i1} + a_{j1}) x_1 + (\\alpha a_{i2} + a_{j2}) x_2  + (\\alpha a_{i3} + a_{j3}) x_3 +  . . . + (\\alpha a_{in} + a_{jn}) x_n= \\alpha b_i + b_j$    \n.    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   \n$a_{m1} x_1 + a_{m2} x_2  + a_{m3} x_3 +  . . . + a_{mn} x_n= b_m$  \n  \nLet $S$ denote the solutions to the system in the statement of the theorem, and let $T$ denote the solutions to the transformed system.  \n\n**Show $S \\subset T$:**  \nSuppose $(x_1, x_2, x_3, . . . , x_n) = (\\beta_1, \\beta_2, \\beta_3, . . . , \\beta_n) \\in S$ is a solution to the original system. Ignoring the $j\\text{-th}$ equation for a moment we know it makes all the other equations of the transformed system true. Using the fact that the solution makes the $i\\text{-th}$ and $j\\text{-th}$ equations of the original system true, we find  \n$(\\alpha a_{i1} + a_{j1}) \\beta_1 + (\\alpha a_{i2} + a_{j2}) \\beta_2  + (\\alpha a_{i3} + a_{j3}) \\beta_3 +  . . . + (\\alpha a_{in} + a_{jn}) \\beta_n$  \n$=(\\alpha a_{i1} \\beta_1 + \\alpha a_{i2} \\beta_2 + \\alpha a_{i3} \\beta_3 + . . . + \\alpha a_{in} \\beta_n ) + (a_{j1} \\beta_1 + a_{j2} \\beta_2 + a_{j3} \\beta_3 + . . . + a_{jn} \\beta_n)$   \n$=\\alpha (a_{i1} \\beta_1 + a_{i2} \\beta_2 + a_{i3} \\beta_3 + . . . + a_{in} \\beta_n) + (a_{j1} \\beta_1 + a_{j2} \\beta_2 + a_{j3} \\beta_3 + . . . + a_{jn} \\beta_n)$  \n$=\\alpha b_i + b_j$  \n  \nThis says that the $j\\text{-th}$ equation of the transformed system is also true, so we have established that  $(\\beta_1, \\beta_2, \\beta_3, . . . , \\beta_n) \\in T \\text{ and therefore } S \\subset T$  \n  \n**Now show that $T \\subset S$:**   \nSuppose $(x_1, x_2, x_3, . . . , x_n) = (\\beta_1, \\beta_2, \\beta_3, . . . , \\beta_n) \\in S$ is a solution to the transformed system. Ignoring the $j\\text{-th}$ equation for a moment, we know it makes all the other equations of the original system true. We then find  \n$a_{j1} \\beta_1 + a_{j2} \\beta_2 + a_{j3} \\beta_3 + . . . + a_{jn} \\beta_n$  \n$=a_{j1} \\beta_1 + a_{j2} \\beta_2 + a_{j3} \\beta_3 + . . . + a_{jn} \\beta_n + \\alpha b_i - \\alpha b_i$  \n$=a_{j1} \\beta_1 + a_{j2} \\beta_2 + a_{j3} \\beta_3 + . . . + a_{jn} \\beta_n + (\\alpha a_{i1} \\beta_1 + \\alpha a_{i2} \\beta_2 + \\alpha a_{i3} \\beta_3 + . . . + \\alpha a_{in} \\beta_n ) - \\alpha b_i$  \n$=\\alpha a_{i1} \\beta_1 + a_{j1} \\beta_1 + \\alpha a_{i2}  \\beta_2 + a_{j2}  \\beta_2  + \\alpha a_{i3} \\beta_3 + a_{j3} \\beta_3 +  . . . + \\alpha a_{in} \\beta_n + a_{jn} \\beta_n - \\alpha b_i$  \n$=(\\alpha a_{i1} + a_{j1}) \\beta_1 + (\\alpha a_{i2} + a_{j2}) \\beta_2  + (\\alpha a_{i3} + a_{j3}) \\beta_3 +  . . . + (\\alpha a_{in} + a_{jn}) \\beta_n - \\alpha b_i$  \n$=\\alpha b_i + b_j - \\alpha b_i$  \n$=b_j$  \n  \nThis says that the $j\\text{-th}$ equation of the original system is also true, so we have established that $(\\beta_1, \\beta_2, \\beta_3, . . . , \\beta_n) \\in S \\text{ , and therefore }T \\subset S$.  ",
+  "reference": "[First course in linear algebra - Section: Solving Systems of Linear Equations](http://linear.ups.edu/html/section-SSLE.html)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fd7711e683da93940cb8008"
+  },
+  "name": "Matrix",
+  "type": "Definition",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "An $m \\times n$ matrix is a rectangular layout of numbers from $\\mathbb{C}$ having $m$ rows and $n$ columns. ",
+  "comment": "We will use upper-case Latin letters from the start of the alphabet ($A$, $B$, $C$, …) to denote matrices and squared-off brackets to delimit the layout. For a matrix A, the notation $[A]_{ij}$ will refer to the complex number in row $i$ and column $j$ of $A$.  \n\n$B = \\begin{bmatrix}\n-1 & 2 & 5 & 3\\\\\n1 & 0 & -6 & 1\\\\\n-4 & 2 & 2 & -2\n\\end{bmatrix}$ is a matrix with $m = 3$ rows and $n = 4$ columns. We say that $[B]_{2,3} = -6$ while $[B]_{3,4} = -2$",
+  "reference": "[First course in Linear Algebra - Section: Reduced Row-Echelon Form](http://linear.ups.edu/html/section-RREF.html)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fd77228683da93940cb8009"
+  },
+  "name": "Column Vector",
+  "type": "Definition",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "A column vector of size $m$ is an ordered list of $m$ numbers, which is written in order vertically, starting at the top and proceeding to the bottom.",
+  "comment": "At times, we will refer to a column vector as simply a **vector**. Column vectors will be usually written with lower case Latin letter from the end of the alphabet such as $u$, $v$, $w$, $x$, $y$, $z$. To refer to the entry or component of vector $v$ in location $i$ of the list, we write $[v]_i$.",
+  "reference": "[First course in Linear Algebra - Section: Reduced Row-Echelon Form](http://linear.ups.edu/html/section-RREF.html)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fd77351683da93940cb800a"
+  },
+  "name": "Zero Column Vector",
+  "type": "Definition",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "The zero vector of size $m$ is the column vector of size $m$ where each entry is the number zero,  \n$O = \\begin{bmatrix}\n0\\\\\n0\\\\\n0\\\\\n.\\\\\n.\\\\\n.\\\\\n0\n\\end{bmatrix}$  \nor defined much more compactly, $[O]_i = 0$ for $1 \\leq i \\leq m$.",
+  "comment": "",
+  "reference": "[First course in Linear Algebra - Section: Reduced Row-Echelon Form](http://linear.ups.edu/html/section-RREF.html)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fd77514683da93940cb800b"
+  },
+  "name": "Coefficient Matrix",
+  "type": "Definition",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "For a system of linear equations  \n$a_{11} x_1 + a_{12} x_2  + a_{13} x_3 +  . . . + a_{1n} x_n= b_1$  \n$a_{21} x_1 + a_{22} x_2  + a_{23} x_3 +  . . . + a_{2n} x_n= b_2$  \n$a_{31} x_1 + a_{32} x_2  + a_{33} x_3 +  . . . + a_{3n} x_n= b_3$  \n.    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    \n.    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    \n.    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   \n$a_\\text{m1} x_1 + a_\\text{m2} x_2  + a_\\text{m3} x_3 +  . . . + a_\\text{mn} x_n= b_m$  \n    \nthe **coefficient matrix** is the $m \\times n$ matrix  \n$A = \\begin{bmatrix}\na_{11} & a_{12} & a_{13} & . . . & a_{1n}\\\\\na_{21} & a_{22} & a_{23} & . . . & a_{2n}\\\\\na_{31} & a_{32} & a_{33} & . . . & a_{3n}\\\\\n. . . \\\\\na_{m1} & a_{m2} & a_{m3} & . . . & a_{mn}\n\\end{bmatrix}$",
+  "comment": "",
+  "reference": "[First course in Linear Algebra - Section: Reduced Row-Echelon Form](http://linear.ups.edu/html/section-RREF.html)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fd77811683da93940cb800c"
+  },
+  "name": "Vector of constants",
+  "type": "Definition",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "For a system of linear equations  \n$a_{11} x_1 + a_{12} x_2  + a_{13} x_3 +  . . . + a_{1n} x_n= b_1$  \n$a_{21} x_1 + a_{22} x_2  + a_{23} x_3 +  . . . + a_{2n} x_n= b_2$  \n$a_{31} x_1 + a_{32} x_2  + a_{33} x_3 +  . . . + a_{3n} x_n= b_3$  \n.    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    \n.    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    \n.    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   \n$a_\\text{m1} x_1 + a_\\text{m2} x_2  + a_\\text{m3} x_3 +  . . . + a_\\text{mn} x_n= b_m$  \n    \nthe **vector of constants** is the column vector of size $m$  \n$b = \\begin{bmatrix}\nb_1\\\\\nb_2\\\\\nb_3\\\\\n.\\\\\n.\\\\\n.\\\\\nb_m\n\\end{bmatrix}$",
+  "comment": "",
+  "reference": "[First course in Linear Algebra - Section: Reduced Row-Echelon Form](http://linear.ups.edu/html/section-RREF.html)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fd8ac2fb99671315024eb0c"
+  },
+  "name": "Solution vector",
+  "type": "Definition",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "For a system of linear equations  \n$a_{11} x_1 + a_{12} x_2  + a_{13} x_3 +  . . . + a_{1n} x_n= b_1$  \n$a_{21} x_1 + a_{22} x_2  + a_{23} x_3 +  . . . + a_{2n} x_n= b_2$  \n$a_{31} x_1 + a_{32} x_2  + a_{33} x_3 +  . . . + a_{3n} x_n= b_3$  \n.    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    \n.    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    \n.    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   \n$a_\\text{m1} x_1 + a_\\text{m2} x_2  + a_\\text{m3} x_3 +  . . . + a_\\text{mn} x_n= b_m$  \n    \nthe **solution vector** is the column vector of size $n$  \n$x = \\begin{bmatrix}\nx_1\\\\\nx_2\\\\\nx_3\\\\\n.\\\\\n.\\\\\n.\\\\\nx_n\n\\end{bmatrix}$",
+  "comment": "",
+  "reference": "[First course in Linear Algebra - Section: Reduced Row-Echelon Form](http://linear.ups.edu/html/section-RREF.html)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fd8ae87b99671315024eb0d"
+  },
+  "name": "Matrix Representation of a Linear System",
+  "type": "Definition",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "If $A$ is the **coefficient matrix** of a system of linear equations and $b$ is the **vector of constants**, then we will write $\\mathcal{LS}(A, b)$ as a shorthand expression for the system of linear equations, which we will refer to as the **matrix representation of the linear system**.",
+  "comment": "The system of linear equations  \n$2x_1 + 4x_2 - 3x_3 + 5x_4 + x_5 = 9$  \n$3x_1 + x_2 + x_4 - 3x_5 = 0$  \n$-2x_1 + 7x_2 - 5x_3 + 2x_4 + 2x_5 = -3$  \n  \nhas coefficient matrix  \n$A=\\begin{bmatrix}  \n2 & 4 & -3 & 5 & 1\\\\   \n3 & 1 & 0 & 1 & -3\\\\  \n-2 & 7 & -5 & 2 & 2  \n\\end{bmatrix}$  \n  \nand vector of constants  \n$b=\\begin{bmatrix}  \n9\\\\   \n0\\\\  \n-3\n\\end{bmatrix}$  \n  \nand so will be referenced as $\\mathcal{LS}(A, b)$.",
+  "reference": "[First course in Linear Algebra - Section: Reduced Row-Echelon Form](http://linear.ups.edu/html/section-RREF.html)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fd8b309b99671315024eb0e"
+  },
+  "name": "Augmented matrix",
+  "type": "Definition",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "Suppose we have a system of $m$ equations in $n$ variables, with coefficient matrix $A$ and vector of constants $b$. Then the **augmented matrix** of the system of equations is the $m \\times (n + 1)$ matrix whose first $n$ columns are the columns of $A$ and whose last column $(n + 1)$ is the column vector $b$. This matrix will be written as $[A|b]$.",
+  "comment": "The augmented matrix **represents** all the important information in the system of equations, since the names of the variables have been ignored, and the only connection with the variables is the location of their coefficients in the matrix. It is important to realize that the augmented matrix is just that, a matrix, and **not** a system of equations. In particular, the augmented matrix does not have any “solutions,” though it will be useful for finding solutions to the system of equations that it is associated with.  \n  \nFor the following system of 3 equations in 3 variables:  \n$x_1 - x_2 + 2x_3 = 1$  \n$2x_1 + x_2 + x_3 = 8$  \n$x_1 + x_2 = 5$  \n  \nHere is its augmented matrix:  \n$\\begin{bmatrix}\n1 & -1 & 2 & 1\\\\\n2 & 1 & 1 & 8\\\\\n1 & 1 & 0 & 5\n\\end{bmatrix}$  ",
+  "reference": "[First course in Linear Algebra - Section: Reduced Row-Echelon Form](http://linear.ups.edu/html/section-RREF.html)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fd8ca7ab99671315024eb0f"
+  },
+  "name": "Row operations",
+  "type": "Definition",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "The following three operations will transform an $m \\times n$ matrix into a different matrix of the same size, and each is known as a row operation.  \n1. Swap the locations of two rows.  \n2. Multiply each entry of a single row by a nonzero quantity.  \n3. Multiply each entry of one row by some quantity, and add these values to the entries in the same columns of a second row. Leave the first row the same after this operation, but replace the second row by the new values.  \n  \nWe will use a symbolic shorthand to describe these row operations:  \n1. $R_i \\leftrightarrow R_j$: swap the location of rows $i$ and $j$.  \n2. $\\alpha R_i$: multiply row $i$ by nonzero scalar $\\alpha$.  \n3. $\\alpha R_i + R_j$: multiply row $i$ by the scalar $\\alpha$ and add to row $j$.",
+  "comment": "",
+  "reference": "[First course in Linear Algebra - Section: Reduced Row-Echelon Form](http://linear.ups.edu/html/section-RREF.html)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fd8ccddb99671315024eb10"
+  },
+  "name": "Row-Equivalent Matrices",
+  "type": "Definition",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "Two matrices, $A$ and $B$, are **row-equivalent** if one can be obtained from the other by a sequence of row operations.",
+  "comment": "The matrices \n$A = \\begin{bmatrix}\n2 & -1 & 3 & 4\\\\\n5 & 2 & -2 & 3\\\\\n1 & 1 & 0 & 6\n\\end{bmatrix} \nB = \\begin{bmatrix}\n1 & 1 & 0 & 6\\\\\n3 & 0 & -2 & -9\\\\\n2 & -1 & 3 & 4\n\\end{bmatrix}$\nare row-equivalent as can be seen from  \n  \n$\\begin{bmatrix}\n2 & -1 & 3 & 4\\\\\n5 & 2 & -2 & 3\\\\\n1 & 1 & 0 & 6\n\\end{bmatrix}$\n${R_1 \\leftrightarrow R_3}\\atop{\\to}$\n$\\begin{bmatrix}\n1 & 1 & 0 & 6\\\\\n5 & 2 & -2 & 3\\\\\n2 & -1 & 3 & 4\n\\end{bmatrix}$\n${-2R_1 + R_2}\\atop{\\to}$\n$\\begin{bmatrix}\n1 & 1 & 0 & 6\\\\\n3 & 0 & -2 & -9\\\\\n2 & -1 & 3 & 4\n\\end{bmatrix}$  \n  \nNotice that each of the three row operations is reversible, so we do not have to be careful about the distinction between “A is row-equivalent to B” and “B is row-equivalent to A.”",
+  "reference": "[First course in Linear Algebra - Section: Reduced Row-Echelon Form](http://linear.ups.edu/html/section-RREF.html)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fd8cdf1b99671315024eb11"
+  },
+  "name": "Row-Equivalent Matrices represent Equivalent Systems",
+  "type": "Theorem",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "Suppose that $A$ and $B$ are row-equivalent augmented matrices. Then the systems of linear equations that they represent are equivalent systems.",
+  "comment": "### Proof  \n  \nIf we perform a single row operation on an augmented matrix, it will have the same effect as if we did the analogous **equation operation** on the system of equations the matrix represents. By exactly the same methods as we used in the proof of Theorem **Equation Operations Preserve Solution Sets** we can see that each of these row operations will preserve the set of solutions for the system of equations the matrix represents.",
+  "reference": "[First course in Linear Algebra - Section: Reduced Row-Echelon Form](http://linear.ups.edu/html/section-RREF.html)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fd8d145b99671315024eb12"
+  },
+  "name": "Reduced Row-Echelon Form",
+  "type": "Definition",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "A matrix is in **reduced row-echelon form** if it meets all of the following conditions:  \n1. If there is a row where every entry is zero, then this row lies below any other row that contains a nonzero entry.  \n2. The leftmost nonzero entry of a row is equal to 1.  \n3. The leftmost nonzero entry of a row is the only nonzero entry in its column.  \n4. Consider any two different leftmost nonzero entries, one located in row $i$, column $j$ and the other located in row $s$, column $t$. If $s > i$, then $t > j$.",
+  "comment": "A row of only zero entries is called a **zero row** and the leftmost nonzero entry of a nonzero row is a **leading 1**. A column containing a leading 1 will be called a **pivot column**. The number of nonzero rows will be denoted by $r$, which is also equal to the number of leading 1's and the number of pivot columns.  \n  \nThe set of column indices for the pivot columns will be denoted by $D = \\{d_1, d_2, d_3, . . . , d_r\\}$ where $d_1 < d_2 < d_3 < . . . < d_r$ while the columns that are not pivot columns will be denoted as $F = \\{f_1, f_2, f_3, . . . , f_{n-r}\\}$  \n  \nOne important point to make here is that all of these terms and notation apply to a matrix. Sometimes we will employ these terms and sets for an augmented matrix, and other times it might be a coefficient matrix. So always give some thought to exactly which type of matrix you are analyzing.  \n  \n$C = \\begin{bmatrix}\n1 & -3 & 0 & 6 & 0 & 0 & -5 & 9\\\\\n0 & 0 & 0 & 0 & 1 & 0 & 3 & -7\\\\\n0 & 0 & 0 & 0 & 0 & 1 & 7 & 3\\\\\n0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\\\\n0 & 0 & 0 & 0 & 0 & 0 & 0 & 0\n\\end{bmatrix}$",
+  "reference": "[First course in Linear Algebra - Section: Reduced Row-Echelon Form](http://linear.ups.edu/html/section-RREF.html)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fd9d8cf08cdd845506e6de3"
+  },
+  "name": "Row-Equivalent Matrix in Echelon Form",
+  "type": "Theorem",
+  "description": "Constructive proof by Gauss-Jordan elimination",
+  "text": "Suppose $A$ is a matrix. Then there is a matrix $B$ so that:  \n1. $A$ and $B$ are **row-equivalent**.  \n2. $B$ is in **reduced row-echelon form**.",
+  "comment": "### Proof  \n  \nSuppose that $A$ has $m$ rows and $n$ columns. We will describe a process for converting $A$ into $B$ via row operations. This procedure is known as **Gauss-Jordan elimination**. Tracing through this procedure will be easier if you recognize that $i$ refers to a row that is being converted, $j$ refers to a column that is being converted, and $r$ keeps track of the number of nonzero rows. Here we go.  \n  \n1. Set $j = 0$ and $r = 0$.  \n2. Increase $j$ by $1$. If $j$ now equals $n + 1$, then stop.  \n3. Examine the entries of $A$ in column $j$ located in rows $r + 1$ through $m$. If all of these entries are zero, then go to Step 2.  \n4. Choose a row from rows $r + 1$ through $m$ with a nonzero entry in column $j$. Let $i$ denote the index for this row.  \n5. Increase  $r$ by $1$.  \n6. Use the first row operation to swap rows $i$ and $r$.  \n7. Use the second row operation to convert the entry in row $r$ and column $j$ to a 1.\n8. Use the third row operation with row $r$ to convert every other entry of column $j$ to zero.\n9. Go to Step 2.  \n  \nThe result of this procedure is that the matrix $A$ is converted to a matrix in **reduced row-echelon form**, which we will refer to as $B$. We need to now prove this claim by showing that the converted matrix has the requisite properties of **reduced row-echelon form** (see definition). First, the matrix is only converted through row operations (Steps 6, 7, 8), so $A$ and $B$ are **row-equivalent** (definition of row-equivalent matrices).  \n  \nIt is a bit more work to be certain that $B$ is in reduced row-echelon form. We claim that as we begin Step 2, the first $j$ columns of the matrix are in reduced row-echelon form with $r$ nonzero rows. Certainly this is true at the start when $j = 0$ , since the matrix has no columns and so vacuously meets the conditions of Definition **reduced row-echelon form** with  $r = 0$ nonzero rows.  \n  \nIn Step 2 we increase $j$ by $1$ and begin to work with the next column. There are two possible outcomes for Step 3. Suppose that every entry of column $j$ in rows $r + 1$ through $m$ is zero. Then with no changes we recognize that the first $j$ columns of the matrix has its first $r$ rows still in reduced-row echelon form, with the final $m - r$ rows still all zero.  \n  \nSuppose instead that the entry in row $i$ of column $j$ is nonzero. Notice that since $r + 1 \\leq i \\leq m$, we know the first $j - 1$ entries of this row are all zero. Now, in Step 5 we increase $r$ by $1$, and then embark on building a new nonzero row. In Step 6 we swap row $r$ and row $i$. In the first $j$ columns, the first $r - 1$ rows remain in reduced row-echelon form after the swap. In Step 7 we multiply row $r$ by a nonzero scalar, creating a $1$ in the entry in column $j$ of row $i$, and not changing any other rows. This new leading 1 is the first nonzero entry in its row, and is located to the right of all the leading 1's in the preceding $r - 1$ rows. With Step 8 we insure that every entry in the column with this new leading 1 is now zero, as required for reduced row-echelon form. Also, rows $r + 1$ through $m$ are now all zeros in the first $j$ columns, so we now only have one new nonzero row, consistent with our increase of $r$ by one. Furthermore, since the first $j - 1$ entries of row $r$ are zero, the employment of the third row operation does not destroy any of the necessary features of rows $1$ through $r - 1$ and rows $r + 1$ through $m$, in columns $1$ through $j - 1$.  \n  \nSo at this stage, the first $j$ columns of the matrix are in reduced row-echelon form. When Step 2 finally increases $j$ to $n + 1$, then the procedure is completed and the full $n$ columns of the matrix are in reduced row-echelon form, with the value of $r$ correctly recording the number of nonzero rows.",
+  "reference": "[First course in Linear Algebra - Section: Reduced Row-Echelon Form](http://linear.ups.edu/html/section-RREF.html)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fd9e0b108cdd845506e6de4"
+  },
+  "name": "Consistent System",
+  "type": "Definition",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "A system of linear equations is **consistent** if it has at least one solution. Otherwise, the system is called **inconsistent**.",
+  "comment": "",
+  "reference": "[First course in Linear Algebra - Section: Types of Solution Sets](http://linear.ups.edu/html/section-TSS.html)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fd9e59d08cdd845506e6de6"
+  },
+  "name": "Independent and Dependent Variables",
+  "type": "Definition",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "Suppose $A$ is the augmented matrix of a consistent system of linear equations and $B$ is a row-equivalent matrix in reduced row-echelon form. Suppose $j$ is the index of a **pivot column** of $B$. Then the variable $x_j$ is **dependent**. A variable that is not dependent is called **independent** or **free**.",
+  "comment": "Consider the system of five equations in five variables,  \n$x_1 - x_2 - 2x_3 + x_4 + 11x_5 = 13$  \n$x_1 - x_2 + x_3 + x_4 + 5x_5 = 16$  \n$2x_1 - 2x_2 + x_4 + 10x_5 = 21$  \n$2x_1 - 2x_2 - x_3 + 3x_4 + 20x_5 = 38$  \n$2x_1 - 2x_2 + x_3 + x_4 + 8x_5 = 22$  \n  \nwhose augmented matrix row-reduces to  \n$\\begin{bmatrix}\n1 & -1 & 0 & 0 & 3 & 6\\\\\n0 & 0 & 1 & 0 & -2 & 1\\\\\n0 & 0 & 0 & 1 & 4 & 9\\\\\n0 & 0 & 0 & 0 & 0 & 0\\\\\n0 & 0 & 0 & 0 & 0 & 0\\\\\n\\end{bmatrix}$  \n  \nColumns 1, 3 and 4 are **pivot columns**, so $D = \\{1, 3 , 4\\}$ . From this we know that the variables $x_1, x_3$ and $x_4$ will be **dependent variables**, and each of the $r = 3$ nonzero rows of the row-reduced matrix will yield an expression for one of these three variables. The set $F$ is all the remaining column indices, $F = \\{2, 5, 6\\}$. The column index 6 in $F$ means that the final column is not a pivot column, and thus the system is consistent (See theorem: *Recognizing Consistency of a Linear System*). The remaining indices in $F$ indicate **free variables**, so $x_2$ and $x_5$ (the remaining variables) are our free variables. The resulting three equations that describe our solution set are then,  \n  \n$(x_{d_1} = x_1) x_1 = 6 + x_2 -3x_5$  \n$(x_{d_2} = x_3) x_3 = 1 + 2x_5$  \n$(x_{d_3} = x_4) x_4 = 9 - 4x_5$  \n  \nMake sure you understand where these three equations came from, and notice how the location of the pivot columns determined the variables on the left-hand side of each equation. We can compactly describe the solution set as,  \n  \n$S = x = \\begin{Bmatrix}\n\\begin{bmatrix}\n6 + x_2 -3x_5\\\\\nx_2\\\\\n1 + 2x_5\\\\  \n9 - 4x_5\\\\\nx_5\n\\end{bmatrix}\n\\mid\nx_2, x_5 \\in \\mathbb{C}\n\\end{Bmatrix}$",
+  "reference": "[First course in Linear Algebra - Section: Types of Solution Sets](http://linear.ups.edu/html/section-TSS.html)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fdb24e62b71a40fb8f51a57"
+  },
+  "name": "The roster method",
+  "type": "Definition",
+  "description": "Method of describing sets",
+  "text": "Method of describing sets, where we describe a set by listing the names of its elements, separated by commas, with the full list enclosed in braces.  \n  \n$A = \\{1, 2, 3, 4\\}$  \n$B = \\{Massachusetts, Michigan, California\\}$  \n  \n1. The order in which elements are listed is irrelevant and  \n2. an object should be listed only once in the roster, since listing it more than once does not change the set  \n  \n$\\{1, 1, 2\\} = \\{1, 2\\}$  \n$5 \\notin A$  \n$Ohio \\notin B$",
+  "comment": "The roster method has the obvious advantage of avoiding the problem of deciding well definedness. Whenever it's used (provided the objects named as elements have meaning), there can be no doubt as to which objects are, and are not, in the set. On the other hand, if the set to be described is large, the roster method can be impractical or impossible to employ.  ",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 5)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fdb262d2b71a40fb8f51a58"
+  },
+  "name": "The description method",
+  "type": "Definition",
+  "description": "Method of describing sets",
+  "text": "We describe a set in terms of one or more properties to be satisfied by objects in the set, and by those objects only.  \n  \n$A = \\{x \\mid x \\text{ satisfies some property or properties} \\}$  \n$C = \\{x \\mid x \\in \\mathbb{N} \\land x \\lt 100 \\}$  \n$D = \\{x \\mid x \\text{ is the name of a state in USA beginning with letter M} \\}$  \n  \nThe set is understood to consist of **all** objects satisfying the preceding description, and **only those objects**.  \n  \n$57 \\in C, 126 \\notin C, Maine \\in D$",
+  "comment": "It is in connection with the description method that **well-definedness** comes into play. The rule or rules used in describing a set must be  \n  \n1. meaningful, that is, use words and/or symbols with an understood meaning  \n2. specific and definitive, as opposed to vague and indefinite  \n  \n\n$F = \\{x \\mid x \\in \\mathbb{N} \\land x \\lt 10^8\\}$  \n$I = \\{x \\mid x \\in \\mathbb{R} \\land 0 \\leq x \\leq 1\\}$",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 5)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fdb29402b71a40fb8f51a59"
+  },
+  "name": "Infinite set",
+  "type": "Definition",
+  "description": "Informal definition",
+  "text": "Infinite set is the set that cannot, even theoretically, be described by the roster method. The elements of an infinite set are impossible to exhaust, and so cannot be listed.  \n  \n$I = \\{x \\mid x \\in \\mathbb{R} \\land 0 \\leq x \\leq 1\\}$",
+  "comment": "",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 6)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fdb297e2b71a40fb8f51a5a"
+  },
+  "name": "Finite set",
+  "type": "Definition",
+  "description": "Informal definition",
+  "text": "Finite set is the one that is not infinite.  \n  \n$F = \\{x \\mid x \\in \\mathbb{N} \\land x \\lt 10^8\\}$  ",
+  "comment": "",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 6)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fdb2d552b71a40fb8f51a5b"
+  },
+  "name": "Universal set",
+  "type": "Definition",
+  "description": "Informal definition",
+  "text": "For our purposes a **universal set** is the set of all objects under discussion in a particular setting. Idea of a **universal set** in an absolute sense, that is, a set containing all objects, leads to serious logical difficulties and so is not used in set theory, the concept, when applied in a\nmore limited sense, has considerable value. A universal set $U$ will often be specified at the start of a problem involving sets, whereas in other situations a universal set is more or less clearly, but implicitly, understood as background to a problem. The role then of a **universal set** is to put some bounds on the nature of the objects that can be considered for membership in the sets involved in a given situation. ",
+  "comment": "There are certain sets of numbers that serve as a universal set so frequently that we assign them (widely used and recognized) names and symbols:\n\n$\\mathbb{N}$ the set of all positive integers (natural numbers) $\\mathbb{N} = \\{1, 2, 3, 4, . . .\\}$  \n$\\mathbb{Z}$ the set of all integers (signed whole numbers) $\\mathbb{Z} = \\{O, _-^+ 1, _-^+ 2, . . . \\}$  \n$\\mathbb{Q}$ the set of all rational numbers (quotients of integers)  \n$\\mathbb{R}$ the set of all real numbers (the reals)  \n$\\mathbb{C}$ the set of all complex numbers  \n  \nIt is of vital importance, also, to realize that the universal set specijied in the description of a set is as important as the rest of the definition\n  \n$F = \\{x \\in \\mathbb{N} \\mid x \\lt 10^8\\}$  \n$I = \\{x \\in \\mathbb{R} \\mid 0 \\leq x \\leq 1\\}$\n",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 7)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fdb306a2b71a40fb8f51a5c"
+  },
+  "name": "Interval",
+  "type": "Definition",
+  "description": "Special set",
+  "text": "A set $I$, all of whose elements are real numbers, is called an **interval** if and only if, whenever $a$ and $b$ are elements of $I$ and $c$ is a real number with $a \\lt c \\lt b$, then $c \\in I$.  \n  \nIntervals are characterized among other sets of real numbers by the property of containing any number between two of its members. All intervals must do this and intervals are the only sets of real numbers that do this.",
+  "comment": "Nine types of intervals are described by the following terminology and notation, in which $a$ and $b$ denote real numbers:  \n  \n1. $\\{x \\in \\mathbb{R} \\mid a \\leq x \\leq b\\}$, a closed and bounded interval. denoted $[a, b]$,\n2. $\\{x \\in \\mathbb{R} \\mid a \\lt x \\lt b\\}$, an open and bounded interval, denoted $(a, b)$,\n3. $\\{x \\in \\mathbb{R} \\mid a \\leq x \\lt b\\}$, a closed-open and bounded interval, denoted $[a, b)$,\n4. $\\{x \\in \\mathbb{R} \\mid a \\lt x \\leq b\\}$, an open-closed and bounded interval, denoted $(a, b]$,\n5. $\\{x \\in \\mathbb{R} \\mid a \\leq x\\}$, a closed and unbounded above interval, denoted $[a, \\infty)$,\n6. $\\{x \\in \\mathbb{R} \\mid a \\lt x\\}$, an open and unbounded above interval, denoted $(a, \\infty)$,\n7. $\\{x \\in \\mathbb{R} \\mid x \\leq b\\}$, a closed and unbounded below interval, denoted $(-\\infty, b]$,\n8. $\\{x \\in \\mathbb{R} \\mid x \\lt b\\}$, an open and unbounded below interval, denoted $(-\\infty, b)$,\n9. $\\mathbb{R}$ itself is an interval and is sometimes denoted $(-\\infty, \\infty)$",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 8)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fdb31592b71a40fb8f51a5d"
+  },
+  "name": "Singleton",
+  "type": "Remark",
+  "description": "Informal definition",
+  "text": "If we let $a = b$ in interval $I = \\{x \\in \\mathbb{R} \\mid a \\leq x \\leq b\\}$, we see that $[a, a] = (a)$, a singleton or **single-element set**, is an interval.",
+  "comment": "",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 9)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fdb33082b71a40fb8f51a5e"
+  },
+  "name": "Empty set",
+  "type": "Remark",
+  "description": "Informal definition using interval",
+  "text": "If $a = b$ in interval $I = \\{x \\in \\mathbb{R} \\mid a \\lt x \\lt b \\}$ no real number satisfies the criterion for membership in the open interval $(a, a)$, since no real number is simultaneously greater than and less than $a$.  If this special case is to be regarded as a set, much less an interval, we must posit the existence of a set with no elements. This we do under the title of the **empty set** or **null set**, denoted either $\\emptyset$ or $\\{\\}$. **Empty set** is at the opposite end of the spectrum from a universal set. Another justification for the existence of an empty set, is the desirability that the intersection of any two sets be a set.",
+  "comment": "",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 9)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fdb6ee1b9dfa55218e86308"
+  },
+  "name": "Set equality",
+  "type": "Remark",
+  "description": "Informal definition of set equality",
+  "text": "Let $A$ and $B$ be sets. We will regard the statement **A equals B**, denoted $A = B$, to mean that $A$ and $B$ have precisely the same elements.\n\n$A = \\{x \\in \\mathbb{N} \\mid 3 \\lt x \\lt 9\\}$  \n$B = \\{4, 5, 6, 7, 8\\}$  \n$A = B$",
+  "comment": "Our informal description of set equality highlights the basic fact that a set is completely determined by its elements. Sets that are indeed equal often appear, or are presented in a form, quite different from each other, with the burden of proof of equality on the reader.  \n  \n**Alternative description of equality of sets**: Sets $A$ and $B$ are equal if and only if every element of $A$ is also an element of $B$ and every element of $B$ is also an element of $A$.   \n  \nEvery set equals itself $A = A$ and $B = B$ (reflexive property).  \nGiven sets $A$ and $B$, if $A = B$, then $B = A$ (symmetric property).  \nGiven sets $A$, $B$, and $C$, if $A = B$ and $B = C$, then $A = C$ (transitive property).",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 10)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fdb7171b9dfa55218e86309"
+  },
+  "name": "Subset",
+  "type": "Remark",
+  "description": "Informal definition",
+  "text": "Let $A$ and $B$ be sets. We regard the statement **A is a subset of B**, denoted $A \\subseteq B$, to mean that every element of $A$ is also an element of $B$. We write $A \\cancel{\\subseteq} B$ to denote that $A$ is not a subset of $B$. FinalIy, we define **B is a superset of A** to mean $A \\subseteq B$.",
+  "comment": "$\\mathbb{N} \\subseteq \\mathbb{Z}$  \n$\\mathbb{Z} \\subseteq \\mathbb{Q}$  \n$\\mathbb{Q} \\subseteq \\mathbb{R}$  \n$\\mathbb{R} \\subseteq \\mathbb{C}$\n  \n$A \\subseteq A$ and $B \\subseteq B$ (reflexive property).  \nSubset relation is not symmetric.  \n$A \\subseteq B$ and $B \\subseteq C$ then $A \\subseteq C$ (transitive property).  \n  \n$A = \\{1, 2, 3\\}$  \n$3 \\in A$ and $\\{2, 3\\} \\subseteq A$ are true.  \n${3} \\in A$ and $3 \\subseteq A$ are false.  \n  \nThere is a special danger of confusion in dealing with the subset relationship in connection with the empty set $\\emptyset$. Consider the question whether $\\emptyset \\in A$ and/or $\\emptyset \\subseteq A$, where $A = \\{1, 2, 3\\}$.",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 11)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fdb7417b9dfa55218e8630a"
+  },
+  "name": "Proper subset",
+  "type": "Definition",
+  "description": "Informal definition",
+  "text": "When we are told that $A \\subseteq B$, the possibility that $A$ and $B$ are equal is left open. To exclude that possibility, we use the notation and\nterminology of **proper subset**.  \n  \nLet $A$ and $B$ be sets. We say that **A is a proper subset of B**, denoted $A \\subset B$, if and only if $A \\subseteq B$, but $A \\cancel{=} B$. We write $A \\cancel{\\subset} B$ to symbolize the statement that $A$ is not a proper subset of $B$ (which could mean that either $A \\cancel{\\subseteq} B$ or $A = B$).",
+  "comment": "",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 12)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fdb786db9dfa55218e8630b"
+  },
+  "name": "Power set",
+  "type": "Definition",
+  "description": "Informal definition",
+  "text": "Let $A$ be a set. We denote by $\\mathcal{P}(A)$, the **power set of A**, the set of all subsets of $A$.",
+  "comment": "$A = \\{1, 2, 3, 4\\}$  \n$\\mathcal{P}(A) = \\{\\{1\\}, \\{2\\}, \\{3\\}, \\{4\\}, \\{1, 2\\}, \\{1, 3\\}, \\{1, 4\\}, \\{2, 3\\}, \\{2, 4\\}, \\{3, 4\\}, \\{1, 2, 3\\}, \\{1, 2, 4\\}, \\{1, 3, 4\\}, \\{2, 3, 4\\}, \\{1, 2, 3, 4\\}\\}$  \n  \n$\\emptyset \\in \\mathcal{P}(A)$?",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 13)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fdc937f2fed7f0ae02b6764"
+  },
+  "name": "Intersection of sets",
+  "type": "Definition",
+  "description": "Without proof",
+  "text": "Let $A$ and $B$ be sets. We define a set formed from $A$ and $B$, called **the intersection of A and B**, denoted $A \\cap B$ (read \"A intersection B\") by the rule $A \\cap B = \\{x \\mid x \\in A \\text{ and } x \\in B\\}$",
+  "comment": "Note that $A \\cap B$ is a **set** whose elements are the objects common to A and B.  \n  \n$A = \\{1, 3, 5, 7, 9\\}, B = \\{1, 4, 7, 10, 13, 16\\}$  \n$A \\cap B = \\{1, 7\\}$  \n  \nThis operation is **binary operation** - it is applied to **two** sets to create third set.",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 16)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fdc94592fed7f0ae02b6765"
+  },
+  "name": "Union of sets",
+  "type": "Definition",
+  "description": "Without proof",
+  "text": "Let $A$ and $B$ be sets. We define **the union of A and B**, denoted $A \\cup B$ (read \"A union B\") by $A \\cup B = \\{ x \\mid x \\in A \\text{ or } x \\in B\\}$.",
+  "comment": "$A \\cup B$ is a set and is formed from $A$ and $B$. Its elements are any objects in either $A$ or $B$, including any object that happens to lie in both\n$A$ and $B$.  \n  \n$A = \\{1, 3, 5, 7, 9\\}, B = \\{1, 4, 7, 10, 13, 16\\}$  \n$A \\cup B = \\{1, 3, 4, 5, 7, 9, 10, 13, 16\\}$  \n  \nThis operation is **binary operation** - it is applied to **two** sets to create third set.",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 16)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fdc96342fed7f0ae02b6766"
+  },
+  "name": "Disjoint sets",
+  "type": "Remark",
+  "description": "Informal definition",
+  "text": "Pairs of sets, having no elements in common, are said to be **disjoint**. ",
+  "comment": "$A = \\{1, 3, 5, 7, 9\\}, D = \\{2, 4, 6, 8, 10\\}$  \n$A \\cap D = \\emptyset$  \n  \nThe intersection of $A$ and $D$ provides another justification for the existence of an **empty set** since $A$ and $D$ have no elements in common.",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 17)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fdc98462fed7f0ae02b6767"
+  },
+  "name": "Complement of set",
+  "type": "Definition",
+  "description": "Informal definition",
+  "text": "Let $A$ be a subset of a universal set $U$. We define **the complement of A**, denoted $A'$, by the rule $A' = \\{x \\in U \\mid x \\notin A\\}$",
+  "comment": "Complement operation is **unary** - we obtain a resultant set from a single given set.  \n  \nClearly the complement of $A$ is very much dependent on the **universal set**, as well as on $A$ itself. If $A = \\{1\\}$, then $A'$ is one thing if $U = \\mathbb{N}$, something quite different if $U = \\mathbb{R}$, and something altogether different again (a singleton set in fact as opposed to an infinite\nset in the other two cases) if $U = \\{1, 2\\}$. \n",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 18)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fdde7e550b1822da869c7ca"
+  },
+  "name": "Set theoretic difference",
+  "type": "Definition",
+  "description": "Informal definition",
+  "text": "Let $A$ and $B$ be sets. We define the difference $B - A$ (read \"B minus A\") by the rule $B - A = \\{ x \\mid x \\in B \\text{ and } x \\notin A\\}$.  \n  \nSet theoretic diflerence, sometimes denoted $B \\setminus A$, is a binary operation that yields the complement of A relative to a set B. Sometimes, this operation is called **relative complement**.  \n  \n$\\{1,2,3\\}\\setminus \\{2,3,4\\}=\\{1\\}$  \n$\\{2,3,4\\}\\setminus \\{1,2,3\\}=\\{4\\}$",
+  "comment": "The difference $B - A$ (also called *the complement of A in B*, or *the complement of A relative to B*) consists of all objects that are elements of $B$ and are not elements of $A$. If $B = U$, then $B - A = U - A = A'$, the ordinary complement of A. Thus complement is a special case of diference. We do not need to know $U$ in order to compute $B - A$.",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 19)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fddec5c382c042810e20d7d"
+  },
+  "name": "Symmetric difference",
+  "type": "Definition",
+  "description": "Informal definition",
+  "text": "Let $A$ and $B$ be sets. We define **the symmetric difference of A and B**, denoted $A \\ominus B$ (sometimes $A \\vartriangle B$), by the rule $A \\vartriangle B = (A - B) \\cup (B - A)$.",
+  "comment": "To be in $A \\vartriangle B$, an object must lie either in $A - B$ or $B - A$, either in $A$ but not in $B$, or in $B$ but not in $A$.  \nElements of $A \\vartriangle B$ are objects in one or the other of the sets $A$ and $B$, but not in both. ",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 20)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fddef9bb81a5928a01be025"
+  },
+  "name": "Ordered pair",
+  "type": "Definition",
+  "description": "Cartesian product introduction",
+  "text": "Ordered pairs resemble notationally two-element sets but differ in two important respects. Represented by the symbol $(a, b)$, the *ordered pair\na comma b* differs from the set $\\{a, b\\}$ in that the order in which the elements are listed makes a difference. Specifically, the ordered pairs $(a, b)$ and $(b, a)$ are different, or unequal, unless $a = b$.\n\n",
+  "comment": "Given ordered pairs $(a, b)$ and $(c, d)$, we say that these ordered pairs are equal, denoted $(a, b) = (c, d)$, if and only if $a = c$ and $b = d$.   \n  \n$(2, 3) \\neq (3, 2) \\text{ while } \\{2, 3\\} = \\{3, 2\\}$.  \n  \n$(a, a)$ is valid expression, but $\\{a, a\\}$ is not ($\\{a\\}$ is correct).",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 21)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fddf1fab81a5928a01be026"
+  },
+  "name": "Cartesian product",
+  "type": "Definition",
+  "description": "Informal definition",
+  "text": "Given sets $A$ and $B$, we define the cartesian product $A \\times B$ (read \"A cross B,\" cartesian product is often called **cross product**) by the rule $A \\times B = \\{(a, b) \\mid a \\in A, b \\in B\\}$. ",
+  "comment": "If $U$ were the **universal set** for sets $A$ and $B$, it would again be the universal set for $A \\cap B$, $A \\cup B$, $A'$, $A - B$, and $A \\vartriangle B$. Putting it differently, the elements of these sets are the same types of objects as those that constitute $A$ and $B$ themselves. This is not the case for $A \\times B$, **the cartesian product of A and B**. The elements of $A \\times B$ are ordered pairs of elements from $A$ and $B$, and thus are not ordinarily members of the universal set for $A$ and $B$.  \n  \nAn object $x$ is an element of $A \\times B$ if and only if there exist $a \\in A$ and $b \\in B$ such that $x = (a, b)$. Note that there is nothing in the definition to prevent $A$ and $B$ from being the same set.",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 22)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fddf52cb81a5928a01be027"
+  },
+  "name": "Venn diagram",
+  "type": "Remark",
+  "description": "Graphical tool",
+  "text": "Sets pictured by Venn diagrams appear as labeled circles, inside a rectangle that represents the universal set $U$. Most often, such diagrams will involve one, two or three circles, with various markings used to match regions in the diagram with sets formed represented by the circles.",
+  "comment": "![A intersects B](https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Venn0001.svg/300px-Venn0001.svg.png)  \n$A \\cap B$  \n  \n![A union B](https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Venn0111.svg/300px-Venn0111.svg.png)  \n$A \\cup B$  \n  \n![A union B](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Venn0010.svg/300px-Venn0010.svg.png)  \n$B / A$ \n  \n![A union B](https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Venn0110.svg/300px-Venn0110.svg.png)  \n$A \\vartriangle B$ ",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 24)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fdf37e26ac1d321209ce961"
+  },
+  "name": "Elementary properties of sets",
+  "type": "Conjecture",
+  "description": "Elementary set algebra, informal",
+  "text": "$X \\cup X' = U$  \n$X \\cap X' = \\emptyset$  \n$(X')' = X$  \n$X \\cup X = X$  \n$X \\cap X = X$",
+  "comment": "Each statement does not assume the status of theorem until we provide a rigorous mathematical proof of each.",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 30)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fdf39aa6ac1d321209ce963"
+  },
+  "name": "Associative property for intersection and union of sets",
+  "type": "Conjecture",
+  "description": "",
+  "text": "$X \\cap (Y \\cap Z) = (X \\cap Y) \\cap Z$    \n$X \\cup (Y \\cup Z) = (X \\cup Y) \\cup Z$",
+  "comment": "The upshot of the associative laws for union and intersection is that the union of three or more sets consists of all the objects in any of the sets, grouped together within one set, while the intersection of three or more sets consists of the objects common to all the sets.",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 31, 32)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fdf3a0e6ac1d321209ce964"
+  },
+  "name": "Commutative property of intersection and union of sets",
+  "type": "Conjecture",
+  "description": "",
+  "text": "$X \\cap Y = Y \\cap X$  \n$X \\cup Y = Y \\cup X$ ",
+  "comment": "Commutativity says that, in computing unions and intersections of two sets, the **order** in which the two sets are listed is irrelevant. ",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 31, 32)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fdf3c3c6ac1d321209ce965"
+  },
+  "name": "Distributive property of intersection and union of sets",
+  "type": "Conjecture",
+  "description": "",
+  "text": "Let $X$, $Y$, and $Z$ be any sets. Then:  \n$X \\cap (Y \\cup Z) = (X \\cap Y) \\cup (X \\cap Z)$  \n$X \\cup (Y \\cap Z) = (X \\cup Y) \\cap (X \\cup Z)$ ",
+  "comment": "These equations, when proved, will be known as **the distributive laws of set theory**. ",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 32 - 34)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fdf43e46ac1d321209ce966"
+  },
+  "name": "Proposition",
+  "type": "Definition",
+  "description": "Beginner friendly Propositional Calculus",
+  "text": "A **statement**, or **proposition**, is a declarative sentence that is either true or false, but is not both true and false.  \n  \nThe designation T(true) or F(false), one and only one of which is assignable to any given statement, is called the truth value of that statement.  \n  \n  ",
+  "comment": "In the propositional calculus we use letters in lower case, such as $p$, $q$, and $r$ to represent statements.  \n  \nThe propositional calculus is about **compound statements** consisting of two or more **component statements**, joined by one or more **logical connectives**.  The truth or falsehood of these compound sentences, depends on the truth or falsehood of their component simple sentences and on characteristics of the connective involved in the compound sentence.",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 53 - 54)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fdf47fa6ac1d321209ce969"
+  },
+  "name": "Negation",
+  "type": "Definition",
+  "description": "Beginner friendly Propositional Calculus",
+  "text": "Given statements p and q, we define **the negation** (or **denial**) of $p$, denoted $\\neg p$ and read *not p*, is true precisely when $p$ is false.",
+  "comment": "| $p$ | $\\neg p$ |\n| :-----------: | :-----------: |\n| **T** | **F** |\n| **F** | **T** |",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 56 - 57)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fdf5c486ac1d321209ce96a"
+  },
+  "name": "Conjunction",
+  "type": "Definition",
+  "description": "Beginner friendly Propositional Calculus",
+  "text": "The conjunction of $p$ and $q$, denoted $p \\land q$ and read *p and q*, is true precisely when $p$ and $q$ are both true.",
+  "comment": "| $p$ | $q$ | $p \\land q$ |  \n| **T** | **T** | **T** |  \n| **T** | **F** | **F** |  \n| **F** | **T** | **F** |  \n| **F** | **F** | **F** |",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 56 - 57)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fdf5ccd6ac1d321209ce96b"
+  },
+  "name": "Disjunction",
+  "type": "Definition",
+  "description": "Beginner friendly Propositional Calculus",
+  "text": "The **disjunction** (or **alternation**) of $p$ and $q$, denoted $p \\lor q$ and read *p or q*, is true when one or the other or both of the statements $p$ and $q$ is (or are) true.",
+  "comment": "| $p$ | $q$ | $p \\lor q$ |  \n| **T** | **T** | **T** |  \n| **T** | **F** | **T** |  \n| **F** | **T** | **T** |  \n| **F** | **F** | **F** |",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 56 - 57)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fdf5f816ac1d321209ce96c"
+  },
+  "name": "Statement form",
+  "type": "Definition",
+  "description": "Beginner friendly Propositional Calculus",
+  "text": "When dealing with expressions such as $\\neg p$, $p \\land q$, and $p \\lor \\neg q$, in a case where $p$ and $q$ are variables representing unknown statements with unknown truth values, we refer to these expressions as **statement forms**.  \nA statement form becomes a statement when a specific statement is substituted each of its unknowns (the latter sometimes referred to as components). As it stands, a statement form is neither true nor false; indeed, our immediate interest is to determine under what truth conditions a given statement form is true and when it is false.  \nThe most convenient device for illustrating the truth values of a compound statement form under the various possible\ntruth conditions is the **truth table**.",
+  "comment": "| $p$ | $q$ | $r$ |  $\\neg p$ | $\\neg p \\land q$ | $p \\land r$ | $(\\neg p \\land q) \\lor (p \\land r)$ |  \n| **T** | **T** | **T** |  **F**  | **F** | **T** | **T** |  \n| **T** | **T** | **F** |  **F**  | **F** | **T** | **T** |  \n| **T** | **F** | **T** |  **T**  | **T** | **F** | **T** |  \n| **T** | **F** | **F** |  **T**  | **F** | **F** | **F** |  \n| **F** | **T** | **T** |  **F**  | **F** | **F** | **F** |  \n| **F** | **T** | **F** |  **F**  | **F** | **F** | **F** |  \n| **F** | **F** | **T** |  **T**  | **T** | **F** | **T**|  \n| **F** | **F** | **F** |  **T**  | **F** | **F** | **F** |  ",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 56 - 57)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fdfab60ffd69e16202be782"
+  },
+  "name": "Tautology",
+  "type": "Definition",
+  "description": "Beginner friendly Propositional Calculus",
+  "text": "A statement form that is true under all possible truth conditions for its components is called a **tautology**.",
+  "comment": "A statement form that is false under all possible truth conditions for its components is called a **contradiction**.  \n  \n| $p$ | $\\neg p$ | $p \\land \\neg p$ | $p \\lor \\neg p$ |  \n| ----------- | ----------- | -----------| -----------|  \n| **T** | **F** | **F** | **T** |  \n| **F** | **T** | **F** | **T** |  \n  \n$p \\land \\neg p$ is contradiction, $p \\lor \\neg p$ is tautology.  \n  \nThe theorems of the propositional calculus are the tautologies.",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 59, 64)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fdfade3ffd69e16202be783"
+  },
+  "name": "Logically equivalent statements",
+  "type": "Definition",
+  "description": "Beginner friendly Propositional Calculus",
+  "text": "Two compound statement forms that have the same truth values as each other under all possible truth conditions for their components are said to be **logically equivalent**.",
+  "comment": "If we must prove a statement whose form is $p$, and find it easier to prove $q$, where $q$ is logically equivalent to $p$, then we may prove $p$ by proving $q$.  \n  \nIf $p$ and $q$ are compound statement forms, then the statement form $p \\iff q$ is a tautology if and only if $p$ and $q$ have the same truth values under all possible truth conditions; that is, if and only if $p$ and $q$ are logically equivalent. Thus we refer to any tautology having **the biconditional** as its main connective as an equivalence.",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 60)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fdfb00dffd69e16202be784"
+  },
+  "name": "Conditional",
+  "type": "Definition",
+  "description": "Beginner friendly Propositional Calculus",
+  "text": "Given statements $p$ and $q$, we define the statement **p implies q**, denoted $p \\to q$, also read \"if $p$, then $q$\", is true except in the case where $p$ is true and $q$ is false. Such a statement is called a **conditional**.",
+  "comment": "The component statements $p$ and $q$ are called the **premise** and **conclusion**, respectively.  \n  \n| $p$ | $q$ | $p \\to q$ |  \n| ----------- | ----------- | -----------|  \n| **T** | **T** | **T** |  \n| **T** | **F** | **F** |  \n| **F** | **T** | **T** |  \n| **F** | **F** | **T** |   \n  \nIf $p \\to q$ is a conditional, then the corresponding conditional $\\neg q \\to \\neg p$ is called its **contrapositive**, $q \\to p$ is called its **converse**, and $\\neg p \\to \\neg q$ is called its **inverse**.  \n  \n| $p$ | $q$ | $\\neg p$ | $\\neg q$ | $p \\to q$ | $q \\to p$ |  $\\neg p \\to \\neg q$ | $\\neg q \\to \\neg p$ |  \n| ----------- | ----------- | -----------|   ----------- | ----------- | -----------|   ----------- | ----------- |  \n| **T** | **T** | **F** |  **F** | **T** | **T** | **T** | **T** | \n| **T** | **F** | **F** |  **T** | **F** | **T** | **T** | **F** | \n| **F** | **T** | **T** |  **F** | **T** | **F** | **F** | **T** | \n| **F** | **F** | **T** |  **T** | **T** | **T** | **T** | **T** |   \n  \nIf $p$ and $q$ are statement forms such that the conditional $p \\to q$ is a tautology, we say that this conditional statement is an **implication** and that *p logically implies q*. Because this situation means that $q$ is true under all truth conditions for which $p$ is true (i.e., the truth of $p$ \"forces\" $q$ to be true), we say that $p$ is a **stronger** statement form than $q$, or that $q$ is weaker than $p$ in this case. ",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 61, 65)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fdfb0c2ffd69e16202be785"
+  },
+  "name": "Biconditional",
+  "type": "Definition",
+  "description": "Beginner friendly Propositional Calculus",
+  "text": "The statement \"$p$ if and only if $q$\", denoted $p \\iff q$, also written \"p iff q\", is true precisely in the cases where $p$ and $q$ are both true or $p$ and $q$ are both false. Such a statement is called a **biconditional**.",
+  "comment": "| $p$ | $q$ | $p \\iff q$ |  \n| ----------- | ----------- | -----------|  \n| **T** | **T** | **T** |  \n| **T** | **F** | **F** |  \n| **F** | **T** | **F** |  \n| **F** | **F** | **T** |  ",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 61)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fe09af31ddfbb0094f7011f"
+  },
+  "name": "Recognizing Consistency of a Linear System",
+  "type": "Theorem",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "Suppose $A$ is the **augmented matrix** of a system of linear equations with $n$ variables. Suppose also that $B$ is a row-equivalent matrix in **reduced row-echelon** form with $r$ nonzero rows. Then the system of equations is inconsistent if and only if column $n + 1$ of $B$ is a pivot column.",
+  "comment": "$p$ = system of equations is inconsistent  \n$q$ = column $n + 1$ of $B$ is a pivot column  \n  \nWe prove that $p \\iff q$, using proof technique of equivalence.  \n  \n**First** we prove $p \\gets q$ or $q \\to p$ (assume $q = T$)  \nThe first half of the proof begins with the assumption that column $n + 1$ of $B$ is a pivot column ($q = T$). Then the leading 1 of row $r$ is located in column  $n + 1$ of $B$ and so row $r$ of $B$ begins with $n$ consecutive zeros, finishing with the leading 1. This is a representation of the equation $0 = 1$, which is false. Since this equation is false for any collection of values we might choose for the variables, there are no solutions for the system of equations, and the system is inconsistent.  \n  \n**Second** we prove $p \\to q$ (assume $p = T$)  \nFor the second half of the proof, we wish to show that if we assume the system is inconsistent ($p = T$), then column $n + 1$ of $B$ is a pivot column. But instead of proving this directly, we will form the logically equivalent statement that is the **contrapositive**, and prove that instead ($p \\to q = \\neg q \\to \\neg p$). Turning the implication around, and negating each portion, we arrive at the logically equivalent statement: if column $n + 1$ of $B$ is not a pivot column, then the system of equations is consistent.  \nNow we prove $\\neg q \\to \\neg p$ which is equivalent to $p \\to q$ (assume $q = F$)   \nIf column $n + 1$ of $B$ is not a pivot column($q = F$), the leading 1 for row $r$ is located somewhere in columns 1 through $n$. Then every preceding row's leading 1 is also located in columns 1 through $n$. In other words, since the last leading 1 is not in the last column, no leading 1 for any row is in the last column, due to the echelon layout of the leading 1's (see definition of Reduced Row-Echelon Form). We will now construct a solution to the system by setting each dependent variable to the entry of the final column in the row with the corresponding leading 1, and setting each free variable to zero. Using our notation for the sets $D$ and $F$ from the reduced row-echelon form (see independent and dependent variables):  \n$x_{d_i} = [B]_{i,n + 1}, 1 \\leq i \\leq r$  \n$x_{f_i} = 0, 1 \\leq i \\leq n - r$  \nThese values for the variables make the equations represented by the first $r$ rows of $B$ all true. Rows numbered greater than $r$ (if any) are all zero rows, hence represent the equation $0 = 0$ and are also all true. We have now identified one solution to the system represented by $B$, and hence a solution to the system represented by $A$. So we can say the system is consistent.\n\n\n  \n",
+  "reference": "[First course in Linear Algebra - Section: Types of Solution Sets](http://linear.ups.edu/html/section-TSS.html)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fe118e41ddfbb0094f70120"
+  },
+  "name": "Selected equivalences of the propositional calculus",
+  "type": "Theorem",
+  "description": "Beginner friendly Propositional Calculus",
+  "text": "The following statement forms, each having the **biconditional** as main connective, are all tautologies (and thus equivalences):  \n  \n$p \\iff p$ - reflexive property of equivalence  \n$p \\iff \\neg(\\neg p)$ - negation of negation  \n$\\neg (p \\land q) \\iff \\neg p \\lor \\neg q$ - negation of conjunction (De Morgans law)  \n$\\neg (p \\lor q) \\iff \\neg p \\land \\neg q$ - negation of disjunction (De Morgans law)  \n$\\neg (p \\to q) \\iff p \\land \\neg q$ - negation of conditional  \n$\\neg (p \\iff q) \\iff (p \\land \\neg q) \\lor (\\neg p \\land q)$ - negation of biconditional  \n$(p \\lor q) \\iff (q \\lor p)$ - commutativity of disjunction  \n$(p \\land q) \\iff (q \\land p)$ - commutativity of conjunction  \n$(p \\lor q) \\lor r \\iff q \\lor (p \\lor r)$ - associativity of disjunction  \n$(p \\land q) \\land r \\iff q \\land (p \\land r)$ - associativity of conjunction  \n$p \\lor (q \\land r) \\iff (p \\lor q) \\land (p \\lor r)$ - disjunction distributes over conjunction  \n$p \\land (q \\lor r) \\iff (p \\land q) \\lor (p \\land r)$ - conjunction distributes over disjunction  \n$(p \\iff q) \\iff [(p \\to q) \\land (q \\to p)]$ - biconditional law, strategy in an iff proof  \n$(p \\to q) \\iff (\\neg q \\to \\neg p)$ - equivalence of contrapositive  \n$(p \\to q) \\iff \\neg p \\lor q$  \n$[p \\to (q \\lor r)] \\iff [(p \\land \\neg q) \\to r]$ - strategy for deriving conclusion $q \\lor r$  \n$[(p \\lor q) \\to r] \\iff [(p \\to r) \\land (q \\to r)]$ - strategy for using hypothesis $p \\lor q$  \n$[p \\to (q \\land r)] \\iff [(p \\to q) \\land (p \\to r)]$ - strategy for deriving conclusion $q \\land r$  \n$[(p \\land q) \\to r] \\iff [(p \\land \\neg r) \\to \\neg q]$ - indirect approach to using hypothesis $p \\land q$  \n$[(p \\land q) \\to r] \\iff [(p \\to r) \\lor (q \\to r)]$ - strategy for using hypothesis $p \\land q$  \n$[(p \\land q) \\to r] \\iff [p \\to (q \\to r)]$  \n$(p \\iff q) \\iff (\\neg q \\iff \\neg p)$",
+  "comment": "All theorems can be proven by truth tables.  \n  \n**biconditional law, strategy in an iff proof** indicates that if $p$ and $q$ are equivalent, then each implies the other. On the other hand, if it is known only that $p$ implies $q$, the possibility that $p$ and $q$ are equivalent is left open. In fact, the latter is true if and only if $q$ implies $p$.",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 68 - 69)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fe11cbd1ddfbb0094f70121"
+  },
+  "name": "Modus ponens",
+  "type": "Remark",
+  "description": "Description of corollary and lemma",
+  "text": "$[p \\land (p \\to q)] \\to q$  ",
+  "comment": "We can conclude the truth of a desired proposition $q$ if we can derive $q$ as a logical consequence of some statement $p$, where $p$ in turn is known to be true. Perhaps, we may wish to prove $q$ and find that $q$ can be proved as a consequence of $p$, where $p$ is some well-known theorem. In such a case we say that $q$ is a **corollary** to $p$. On the other hand, we may wish to prove $q$ where it is evident that $q$ follows from a statement $p$, where the truth of $p$, however, is not known. In such a case the burden of proof shifts from proving $q$ directly to trying somehow to prove $p$. A statement $p$ in this context (assuming it can be proved) is often referred to as a **lemma**.",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 70)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fe120651ddfbb0094f70122"
+  },
+  "name": "Selected implications of the propositional calculus",
+  "type": "Theorem",
+  "description": "Beginner friendly Propositional Calculus",
+  "text": "The following statement forms, each having the conditional as main connective, are all tautologies (and hence are implications):  \n  \n$p \\to q$ - reflexive property of implication  \n$[(p \\to q) \\land (q \\to r)] \\to (p \\to r)$ - law of syllogism; transitive property of implication  \n$(p \\land q) \\to p$ - law of simplification  \n$p \\to (p \\lor q)$ - law of addition  \n$[p \\land (p \\to q)] \\to q$ - law of detachment; modus ponens  \n$[(p \\to q) \\land \\neg q] \\to \\neg p$ - indirect proof; proof by contrapositive; modus tollens  \n$[\\neg p \\to (q \\land \\neg q)] \\to p$ - indirect proof; proof by contradiction; reductio ad absurdurn  \n$(p \\iff q) \\to (q \\iff p)$ - symmetric property of equivalence  \n$[(p \\iff q) \\land (q \\iff r)] \\to (p \\iff r)$ - transitive property of equivalence  \n$(p \\to r) \\to [(p \\land q) \\to r]$  \n$[(p \\lor q) \\land \\neg p] \\to q$ - law of disjunction; modus tollendo ponens  \n$\\neg p \\to (p \\to q)$  \n$q \\to (p \\to q)$  \n$(p \\iff q) \\to (p \\to q)$",
+  "comment": "All theorems can be proven with truth tables",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 70)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fe1ec571e573e2c7406e829"
+  },
+  "name": "Relationships between r and n for a consistent system",
+  "type": "Theorem",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "Suppose $A$ is the **augmented matrix** of a consistent system of linear equations with $n$ variables. Suppose also that $B$ is a **row-equivalent matrix in reduced row-echelon form** with $r$ pivot columns. Then $r \\leq n$. If $r = n$, then the system has a **unique solution**, and if $r \\lt n$, then the system has **infinitely many solutions**.",
+  "comment": "This theorem contains three implications that we must establish.  \n  \nFirst implication is $r \\leq n \\to \\text{system is consistent}$.    \nNotice first that $B$ has $n + 1$ columns, so there can be at most $n + 1$ pivot columns, i.e. $r \\leq n + 1$. If $r = n + 1$, then every column of $B$ is a pivot column, and in particular, the last column is a pivot column. So this tells us (see theorem **Recognizing Consistency of a Linear System**) that the system is inconsistent, contrary to our hypothesis. We are left with $r \\leq n$.  \n  \nSecond implication is $r = n \\to \\text{system has one solution}$.    \nWhen $r = n$, we find $n - r = 0$ free variables (i.e. $F = \\{n + 1\\}$) and the only solution is given by setting the $n$ variables to the the first $n$ entries of column $n + 1$ of $B$.  \n  \nThird implication is $r \\lt n \\to \\text{system has infinitely many solutions}$.    \nWhen $r \\lt n$, we have $n - r \\gt 0$ free variables. Choose one free variable and set all the other free variables to zero. Now, set the chosen free variable to any fixed value. It is possible to then determine the values of the dependent variables to create a solution to the system. By setting the chosen free variable to different values, in this manner we can create infinitely many solutions.",
+  "reference": "[First course in Linear Algebra - Section: Types of Solution Sets](http://linear.ups.edu/html/section-TSS.html)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fe1f1cb1e573e2c7406e82a"
+  },
+  "name": "Possible Solution Sets for Linear Systems",
+  "type": "Corollary",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "A **system of linear equations** has no solutions, a unique solution or infinitely many solutions.",
+  "comment": "(See definition *Consistent system*) By its definition, a system is either inconsistent or consistent.  \n(See theorem *Recognizing Consistency of a Linear System* = RCLS) The first case describes systems with no solutions.  \n(See theorem *Relationships between $r$ and $n$ for a consistent system* = CSRN) For consistent systems, we have the remaining two possibilities as guaranteed by, and described in, Theorem CSRN.\n\n![Decision Tree for Solving Linear Systems](http://linear.ups.edu/html/diagrams/DTSLS.svg)  \n  \nSee definition *Solution Set of a System of Linear Equations*",
+  "reference": "[First course in Linear Algebra - Section: Types of Solution Sets](http://linear.ups.edu/html/section-TSS.html)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fe1fd0f1e573e2c7406e82b"
+  },
+  "name": "Solution for Consistent Systems using Free Variables",
+  "type": "Corollary",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "Suppose $A$ is the **augmented matrix** of a consistent system of linear equations with $n$ variables. Suppose also that $B$ is a row-equivalent matrix in reduced row-echelon form with $m$ rows that are not completely zeros. Then the solution set can be described with $n - m$ free variables.",
+  "comment": "### Proof  \n  \nSince matrix $B$ is in Reduced Row-Echelon Form, by definition of **Reduced Row-Echelon Form**, for rows that are not completely zeros:  \n2. The leftmost nonzero entry of a row is equal to 1.  \n3. The leftmost nonzero entry of a row is the only nonzero entry in its column.  \nwe can conclude that the number of nonzero rows $m$ is equal to number of **pivot columns** $r$ inside matrix $B$.  \n  \nUsing $n$ and $r$ with theorem **Relationships between r and n for a consistent system** we can determine solution of $A$.",
+  "reference": "[First course in Linear Algebra - Section: Types of Solution Sets](http://linear.ups.edu/html/section-TSS.html) - Theorem FMVI",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fe1fe9c1e573e2c7406e82c"
+  },
+  "name": "Consistent system with More Variables than Equations has Infinite solutions",
+  "type": "Theorem",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "Suppose a consistent system of linear equations has $m$ equations in $n$ variables. If $n \\gt m$, then the system has infinitely many solutions.",
+  "comment": "Suppose that the augmented matrix of the system of equations is row-equivalent to $B$, a matrix in reduced row-echelon form with $r$ nonzero rows. Because $B$ has $m$ rows in total, the number of nonzero rows is less than or equal to $m$. In other words, $r \\leq m$. Follow this with the hypothesis that $n \\gt m$ and we find that the system has a solution set described by at least one free variable because  \n  \n$n - r \\geq n - m \\gt 0$.  \n  \nA consistent system with free variables will have an infinite number of solutions, as given by Theorem **Relationships between r and n for a consistent system**.",
+  "reference": "[First course in Linear Algebra - Section: Types of Solution Sets](http://linear.ups.edu/html/section-TSS.html) - Theorem CMVEI",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fe39144ac3d111dc0ab1d74"
+  },
+  "name": "Homogeneous System",
+  "type": "Definition",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "A system of linear equations, $\\mathcal{LS}(A, b)$ is **homogeneous** if the vector of constants is the zero vector, in other words, if $b = 0$.\n",
+  "comment": "$2x_1 - 3x_2 + x_3 - 6x_4 = 0$  \n$4x_1 + x_2 + 2x_3 + 9x_4 = 0$  \n$3x_1 + x_2 + x_3 + 8x_4 = 0$  \n  \nSetting each variable to zero will always be a solution of a homogeneous system.",
+  "reference": "[First course in Linear Algebra - Section: Types of Solution Sets](http://linear.ups.edu/html/section-TSS.html) - Definition HS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fe391c9ac3d111dc0ab1d75"
+  },
+  "name": "Homogeneous Systems are Consistent",
+  "type": "Theorem",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "Suppose that a system of linear equations is homogeneous. Then the system is consistent and one solution is found by setting each variable to zero.",
+  "comment": "### Proof  \n  \nSet each variable of the system to zero. When substituting these values into each equation, the left-hand side evaluates to zero, no matter what the coefficients are. Since a homogeneous system has zero on the right-hand side of each equation as the constant term, each equation is true. With one demonstrated solution, we can call the system consistent.  \n  \nSince this solution is so obvious, we now define it as the trivial solution.",
+  "reference": "[First course in Linear Algebra - Section: Types of Solution Sets](http://linear.ups.edu/html/section-TSS.html) - Theorem HSC",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fe39271ac3d111dc0ab1d76"
+  },
+  "name": "Trivial Solution to Homogeneous Systems of Equations",
+  "type": "Definition",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "Suppose a homogeneous system of linear equations has $n$ variables. The solution $x_1 = 0, x_2 = 0, …, x_n = 0$ (i.e. $x = 0$) is called **the trivial solution**.",
+  "comment": "When we do row operations on the augmented matrix of a homogeneous system of linear equations the last column of the matrix is all zeros. Any one of the three allowable **row operations** will convert zeros to zeros and thus, the final column of the matrix in reduced row-echelon form will also be all zeros. So in this case, we may be as likely to reference only the coefficient matrix and presume that we remember that the final column begins with zeros, and after any number of row operations is still zero.",
+  "reference": "[First course in Linear Algebra - Section: Types of Solution Sets](http://linear.ups.edu/html/section-TSS.html) - Definition TSHSE",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fe395bcac3d111dc0ab1d77"
+  },
+  "name": "Homogeneous System with More Variables than Equations has Infinite solutions",
+  "type": "Theorem",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "Suppose that a homogeneous system of linear equations has $m$ equations and $n$ variables with $n \\gt m$. Then the system has infinitely many solutions.",
+  "comment": "### Proof  \n   \n$p = \\text{system is homogenous}$  \n$q = \\text{system has infinitely many solutions}$  \nWe want to prove $p \\to q$.  \n\nWe are assuming the system is homogeneous $p = T$, so **Theorem Homogeneous Systems are Consistent** says it is consistent. Then the hypothesis that $n \\gt m$, together with **Consistent system with More Variables than Equations has Infinite solutions**, gives infinitely many solutions.  \n  \n$p = T$  \n$r = \\text{ Homogeneous Systems are Consistent} = T$  \n$s = p \\land r = \\text{ system is consistent} = T$  \n$t = n \\gt m = T$  \n$u = \\text{ Consistent system with More Variables than Equations has Infinite solutions} = T$  \n$t \\land u \\land s = q$",
+  "reference": "[First course in Linear Algebra - Section: Types of Solution Sets](http://linear.ups.edu/html/section-TSS.html) - Theorem HMVEI",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fe397e4ac3d111dc0ab1d78"
+  },
+  "name": "Null Space of a Matrix",
+  "type": "Definition",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "The null space of a matrix $A$, denoted $\\mathcal{N}(A)$, is the set of all the vectors that are solutions to the homogeneous system $\\mathcal{LS}(A, 0)$.",
+  "comment": "The set of solutions to a homogeneous system (which is never empty) is of enough interest to warrant its own name. However, we define it as a **property of the coefficient matrix**, not as a property of some system of equations.",
+  "reference": "[First course in Linear Algebra - Section: Types of Solution Sets](http://linear.ups.edu/html/section-TSS.html) - Definition NSM",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fe4af054cb8154cf8dbffef"
+  },
+  "name": "Predicate",
+  "type": "Definition",
+  "description": "Beginner friendly Predicate Calculus",
+  "text": "A **predicate** (also named **propositional function** or **open sentence**) is a declarative sentence containing one or more variables, or unknowns. A predicate is not a **statement**, since a predicate is neither true nor false. On the other hand, predicates are closely related to statements, and our notation for them (e.g., $p(x)$ or $q(x, y)$ where\n$x$ and $y$ are unknowns) reflects that fact.",
+  "comment": "$p(x): x > 4$ - example of predicate in one variable  \n$p(5): 5 > 4 \\to T$  \n$p(3): 3 > 4 \\to F$  \n  \n$q(x, y): x = y$ - example of predicate in two variables  \n$q(3, 6): 3 = 6 \\to F$  \n$q(5, 5): 5 = 5 \\to T$\n  \nIn particular, there are two standard procedures by which a predicate can be converted into a statement. These procedures are *substitution* and *quantification*.  \nIf we wish to convert a predicate into a statement by substitution, we must take care to substitute **for each** of the unknowns.",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 82)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fe4b0914cb8154cf8dbfff1"
+  },
+  "name": "Domain of discourse",
+  "type": "Definition",
+  "description": "Beginner friendly Predicate Calculus",
+  "text": "Associated with each predicate $p(x)$, there must be a universal set $U$ of objects that may be substituted for the variable. The set $U$, often referred to as the **domain of discourse** in the context of the predicate calculus, is sometimes named explicitly and sometimes must be surmised, as was the case with the concept of **universal set** in set theory. ",
+  "comment": "For $p(x): x > 4$ then $U = \\mathbb{R}$",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 83)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fe4b1b74cb8154cf8dbfff2"
+  },
+  "name": "Truth set",
+  "type": "Definition",
+  "description": "Beginner friendly Predicate Calculus",
+  "text": "For each open sentence $p(x)$, with associated domain of discourse $U$, the subset $P$ of $U$ defined by $P = \\{x \\in U \\mid p(x) \\text{ is a true statement}\\}$, henceforth described simply by $\\{x \\mid p(x)\\}$, is called the **truth set** of $p(x)$.",
+  "comment": "We will adopt the notation that truth sets of general predicates $p(x), q(x, y), r(x, y, z)$ are denoted by the corresponding uppercase letters $P, Q, R$, and the like.",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 83)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fe4b3b64cb8154cf8dbfff3"
+  },
+  "name": "Logically equivalent predicates",
+  "type": "Definition",
+  "description": "Beginner friendly Predicate Calculus",
+  "text": "We say that two propositional functions $p(x)$ and $q(x)$ (over a common domain of discourse $U$) are **logically equivalent over $U$** if and only if they have the same truth sets; that is, $P = Q$.",
+  "comment": "Two predicates $p(x)$ and $q(x)$ may be equivalent over one domain of discourse and nonequivalent over another.  \n  \n$p(x, y): x = y$  \n$q(x, y): x^2 = y^2$  \n  \nIf $U = \\mathbb{R}^+ \\times \\mathbb{R}^+$ then $p(x, y) = q(x, y)$  \nIf $U = \\mathbb{R} \\times \\mathbb{R}$ then $p(x, y) \\not = q(x, y)$  \n  \n$\\mathbb{R}^+$ is set of positive real numbers.",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 83)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fe4b5624cb8154cf8dbfff4"
+  },
+  "name": "Negation",
+  "type": "Definition",
+  "description": "Beginner friendly Predicate Calculus",
+  "text": "Let $p(x)$ and $q(x)$ be propositional functions over a domain of discourse $U$, with truth sets $P$ and $Q$, respectively. We define the truth set of **negation**:  \n  \n$\\neg p(x)$, **not** $p(x)$, to be $P'$",
+  "comment": "This connection highlights, at the same time, important connections between the algebra of logic and the algebra of sets, and more specifically, correspondences between the logical connective **not**, and the set operation **complement**.  \n  \n$U = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\\}$  \n$p(x): x \\text{ is odd}$  \n$P = \\{1, 3, 5, 7, 9\\}$  \n  \n$\\neg p(x) = \\{2, 4, 6, 8, 10\\}' = \\{1, 3, 5, 7, 9\\} = P'$",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 84 - 85)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fe4b8014cb8154cf8dbfff5"
+  },
+  "name": "Conjunction",
+  "type": "Definition",
+  "description": "Beginner friendly Predicate Calculus",
+  "text": "Let $p(x)$ and $q(x)$ be propositional functions over a domain of discourse $U$, with truth sets $P$ and $Q$, respectively. We define the truth set of **conjunction**:  \n  \n$p(x) \\land q(x), p(x)$ **and** $q(x)$ to be $P \\cap Q$",
+  "comment": "This connection highlights, at the same time, important connections between the algebra of logic and the algebra of sets, and more specifically, correspondences between the logical connective **and** and the set operation **intersection**.  \n  \n$U = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\\}$  \n$p(x): x \\text{ is odd}$  \n$q(x): 3 \\leq x \\lt 8$  \n$P = \\{1, 3, 5, 7, 9\\}$  \n$Q = \\{3, 4, 5, 6, 7\\}$  \n$P \\cap Q = \\{3, 5, 7\\}$  \n  \n$p(x) \\land q(x) = \\{3, 5, 7\\} = \\{1, 3, 5, 7, 9\\} \\cap \\{3, 4, 5, 6, 7\\} = P \\cap Q$",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 84 - 85)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fe4b9474cb8154cf8dbfff6"
+  },
+  "name": "Disjunction",
+  "type": "Definition",
+  "description": "Beginner friendly Predicate Calculus",
+  "text": "Let $p(x)$ and $q(x)$ be propositional functions over a domain of discourse $U$, with truth sets $P$ and $Q$, respectively. We define the truth set of **disjunction**:   \n  \n$p(x) \\lor q(x), p(x)$ **or** $q(x),$ to be $P \\cup Q$",
+  "comment": "This connection highlights, at the same time, important connections between the algebra of logic and the algebra of sets, and more specifically, correspondences between the logical connective or and the set operations union.  \n\n$U = \\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10\\}$  \n$p(x): x \\text{ is odd}$  \n$q(x): 3 \\leq x \\lt 8$  \n$P = \\{1, 3, 5, 7, 9\\}$  \n$Q = \\{3, 4, 5, 6, 7\\}$  \n$P \\cup Q = \\{1, 3, 4, 5, 6, 7, 9\\}$  \n  \n$p(x) \\lor q(x) = \\{1, 3, 4, 5, 6, 7, 9\\} = \\{1, 3, 5, 7, 9\\} \\cup \\{3, 4, 5, 6, 7\\} = P \\cup Q$",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 84 - 85)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fe64e289cbc3e1b4cb42894"
+  },
+  "name": "Conditional",
+  "type": "Definition",
+  "description": "Beginner friendly Predicate Calculus",
+  "text": "Let $p(x)$ and $q(x)$ be propositional functions over a domain of discourse $U$, with truth sets $P$ and $Q$, respectively. We define the truth set of **conditional**:  \n  \n$p \\to q,$ **if** $p$ **then** $q$, to be $P' \\cup Q$",
+  "comment": "Suppose that $p(x)$ and $q(x)$ are propositional functions such that the proposition $p(a) \\iff q(a)$ is a tautology for every specific substitution of an element $a$ from $U$ for the variable $x$. We would certainly expect $p(x)$ and $q(x)$ to be logically equivalent (i.e., $P = Q$) over any domain of\ndiscourse. With this in mind, we recall theorem $(p \\to q) \\iff (\\neg p \\lor q)$, which leads to the definition.",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 85)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fe64eed9cbc3e1b4cb42895"
+  },
+  "name": "Biconditional",
+  "type": "Definition",
+  "description": "Beginner friendly Predicate Calculus",
+  "text": "Let $p(x)$ and $q(x)$ be propositional functions over a domain of discourse $U$, with truth sets $P$ and $Q$, respectively. We define the truth set of **biconditional**:  \n  \n$p \\iff q,$ $p$ **if and only if** $q$, to be $(P' \\cup Q) \\cap (P \\cup Q')$",
+  "comment": "Suppose that $p(x)$ and $q(x)$ are propositional functions such that the proposition $p(a) \\iff q(a)$ is a tautology for every specific substitution of an element $a$ from $U$ for the variable $x$. We would certainly expect $p(x)$ and $q(x)$ to be logically equivalent (i.e., $P = Q$) over any domain of\ndiscourse. With this in mind, we recall theorem $(p \\iff q) \\iff [(\\neg p \\lor q) \\land (p \\lor \\neg q)]$, which leads to the definition.",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 85)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fea2abb31ec394e806227ab"
+  },
+  "name": "For every quantifier",
+  "type": "Definition",
+  "description": "Beginner friendly Predicate Calculus",
+  "text": "If $p(x)$ is a propositional function with variable $x$ and domain of discourse $U$, then:  \n  \nThe sentence **for all $x$, $p(x)$**, symbolized $(\\forall x)(p(x))$, is a **proposition** that is true if and only if the truth set $P$ of $p(x)$ equals $U$.  \n  \n$(\\forall x)(x^2 \\gt 0) = T$",
+  "comment": "It's important to understand that an expression $(\\forall x)(p(x))$ is a **proposition** and not a **predicate**, even though it involves a variable. Unlike a propositional function, its truth value does not depend on the variable $x$, but only on the propositional function $p(x)$ and the domain of discourse $U$.  \nNotice that the statement $(\\forall x)(p(x))$ is true precisely when the statement $p(a)$ is true for every possible substitution of a specific object $a$ from the domain of discourse $U$.  \n  \n$p(n): n \\text{ is even}, P = \\{ . . . , -4, -2, 0, 2, 4, . . . \\}$  \n$q(n): n \\text{ is odd}, Q = \\{ . . . , -3, -1, 1, 3, 5, . . . \\}$  \n$r(n): n \\text{ is divisible by 4}, R = \\{ . . . , -8, -4, 0, 4, 8, . . . \\}$  \n$s(n): n \\text{ is divisible by 3}, S = \\{ . . . , -6, -3, 0, 3, 6, . . . \\}$  \n  \n$(\\forall n)(\\neg p(n)) = F \\text{ since } P' \\not = U$ - every integer is not even   \n$\\neg((\\forall n)(p(n))) = T \\text{ since } (\\forall n)(p(n)) = F$ - not every integer is even   \n$(\\forall n)(r(n) \\to p(n)) = T$ - for every integer $n$, if $n$ is a multiple of $4$, then $n$ is even",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 88 - 90)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fea2e0f31ec394e806227ac"
+  },
+  "name": "There exists quantifier",
+  "type": "Definition",
+  "description": "Beginner friendly Predicate Calculus",
+  "text": "If $p(x)$ is a propositional function with variables $x$ and domain of discourse $U$, then:  \n  \nThe sentence **there exists $x$, $p(x)$**, symbolized $(\\exists x)(p(x))$, is a **proposition** that is true if and only if the truth set $P$ of $p(x)$ is nonempty.  \n  \n$(\\exists x)(x^2 = 4) = T$  \n$(\\exists x)(x^2 = -5) = F$\n\n",
+  "comment": "It's important to understand that an expression $(\\exists x)(p(x))$ is a **proposition** and not a **predicate**, even though it involves a variable. Unlike a propositional function, its truth value does not depend on the variable $x$, but only on the propositional function $p(x)$ and the domain of discourse $U$.  \nNotice that the statement $(\\exists x)(p(x))$ is true precisely when $p(a)$ is true for at least one substitution of an object $a$ from $U$.  \n  \n$p(n): n \\text{ is even}, P = \\{ . . . , -4, -2, 0, 2, 4, . . . \\}$  \n$q(n): n \\text{ is odd}, Q = \\{ . . . , -3, -1, 1, 3, 5, . . . \\}$  \n$r(n): n \\text{ is divisible by 4}, R = \\{ . . . , -8, -4, 0, 4, 8, . . . \\}$  \n$s(n): n \\text{ is divisible by 3}, S = \\{ . . . , -6, -3, 0, 3, 6, . . . \\}$  \n  \n$(\\exists n)(\\neg p(n)) = T \\text{ since } P' \\not = \\emptyset$ - some integers are not even   \n$\\neg ((\\exists n)(p(n))) = F \\text{ since } (\\exists n)(p(n)) = T$ - integers that are even do not exist   \n$(\\exists n)(p(n) \\land q(n)) = F \\text{ since } P \\cap Q = \\emptyset$ - some even integers are odd  \n$(\\exists n)(p(n)) \\land (\\exists n)(q(n)) = T \\text{ since } P \\not = \\emptyset \\text{ and } Q \\not = \\emptyset$ - some integers are even and some integers are odd",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 88 - 90)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fea4d3d31ec394e806227ae"
+  },
+  "name": "Equivalences Involving Compound Predicates",
+  "type": "Theorem",
+  "description": "Predicate Calculus identities, without proof",
+  "text": "Let $p(x)$ and $q(x)$ be predicates over a domain of discourse $U$ with truth sets $P$ and $Q$. Then:  \n  \n$\\neg [(\\forall x)(p(x))] \\iff (\\exists x)(\\neg p(x))$ **truth set is** $P = U \\text{ is false} \\iff P' \\not =\\emptyset$  \n$\\neg [(\\exists x)(p(x))] \\iff (\\forall x)(\\neg p(x))$ **truth set is** $P \\not = \\emptyset \\text{ is false }\\iff P' = U$  \n$(\\forall x)(p(x) \\land q(x)) \\iff (\\forall x)(p(x)) \\land (\\forall x)(q(x))$ **truth set is** $P \\cap Q = U \\iff P = U \\text{ and } Q = U$  \n$(\\exists x)(p(x) \\lor q(x)) \\iff (\\exists x)(p(x)) \\lor (\\exists x)(q(x))$ **truth set is** $P \\cup Q \\not = \\emptyset \\iff P \\not = \\emptyset \\text{ or } Q \\not = \\emptyset$",
+  "comment": "For any propositional function $p(x, y)$ in two variables,  \n   \n$(\\forall x)(\\forall y)p(x, y) \\iff (\\forall y)(\\forall x)p(x, y)$  \n$(\\exists x)(\\exists y)p(x, y) \\iff (\\exists y)(\\exists x)p(x, y)$  \n$\\neg[(\\forall x)(\\exists y)p(x, y)] \\iff (\\exists x)(\\forall y)(\\neg p(x, y))$  \n$\\neg[(\\exists x)(\\forall y)p(x, y)] \\iff (\\forall x)(\\exists y)(\\neg p(x, y))$  \n$\\neg[(\\forall x)(\\forall y)p(x, y)] \\iff (\\exists x)(\\exists y)(\\neg p(x, y))$  \n$\\neg[(\\exists x)(\\exists y)p(x, y)] \\iff (\\forall x)(\\forall y)(\\neg p(x, y))$",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 95 - 107)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fea511131ec394e806227af"
+  },
+  "name": "Implications Involving Compound Predicate",
+  "type": "Theorem",
+  "description": "Predicate Calculus identities, without proof",
+  "text": "Let $p(x)$ and $q(x)$ be predicates over a domain of discourse $U$ with truth sets $P$ and $Q$. Then  \n  \n$(\\forall x)(p(x)) \\lor (\\forall x)(q(x)) \\to (\\forall x)(p(x) \\lor q(x))$ **truth set is** $P = U \\text{ or } Q = U \\to P \\cup Q = U$  \n$(\\exists x)(p(x) \\land q(x)) \\to (\\exists x)(p(x)) \\land (\\exists x)(q(x))$ **truth set is**  $P \\cap Q \\not = \\emptyset \\to P \\not = \\emptyset \\text{ and } Q \\not = \\emptyset$   \n$(\\forall x)(p(x)) \\to (\\exists x)(p(x))$ **truth set is** $P = U \\to P \\not = \\emptyset$, we assume further that $U$ is nonempty\n$(\\forall x)(p(x)) \\to p(a)$ **truth set is** $P = U \\to a \\in P$, we assume that $a$ is a specific element of $U$   \n$p(a) \\to (\\exists x)(p(x))$ **truth set is** $a \\in P \\to P \\not = \\emptyset$, we assume that $a$ is a specific element of $U$    ",
+  "comment": "$(\\exists y)(\\forall x)(p(x, y)) \\to (\\forall x)(\\exists y)(p(x, y))$   \n$(\\forall x)(\\forall y)p(x, y) \\to (\\exists x)(\\exists y)p(x, y)$, provided that each domain $U_1$ and $U_2$ is nonempty.  \n",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 95 - 107)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fecf2211bb69d3cdc2c4071"
+  },
+  "name": "Square Matrix",
+  "type": "Definition",
+  "description": "Beginner Friendly Linear Algebra",
+  "text": "A matrix with $m$ rows and $n$ columns is **square** if $m = n$. In this case, we say the matrix has size $n$. To emphasize the situation when a matrix is not square, we will call it **rectangular**.",
+  "comment": "",
+  "reference": "[First course in Linear Algebra - Section: Nonsingular Matrices](http://linear.ups.edu/html/section-NM.html) - Definition SQM",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fecf4681bb69d3cdc2c4073"
+  },
+  "name": "Nonsingular Matrix",
+  "type": "Definition",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "Suppose $A$ is a square matrix. Suppose further that the solution set to the homogeneous linear system of equations $\\mathcal{LS}(A, 0)$ is $\\{0\\}$, in other words, the system has only the **trivial solution**. Then we say that $A$ is a **nonsingular matrix**. Otherwise we say $A$ is a **singular matrix**.",
+  "comment": "We can investigate whether any square matrix is nonsingular or not, no matter if the matrix is derived somehow from a system of equations or if it is simply a matrix. The definition says that to perform this investigation we must construct a very specific system of equations (homogeneous, with the matrix as the coefficient matrix) and look at its solution set.  \n  \nNotice that it makes no sense to call a system of equations nonsingular (the term does not apply to a system of equations), nor does it make any sense to call a $5 \\times 7$ matrix singular (the matrix is not square).  \n  \n$A = \\text{ singular } = \\begin{bmatrix}\n1 & -1 & 2\\\\\n2 & 1 & 1\\\\\n1 & 1 & 0\n\\end{bmatrix}$\n    \n$B = \\text{ nonsingular } = \\begin{bmatrix}\n-7 & -6 & -12\\\\\n5 & 5 & 7\\\\\n1 & 0 & 4\n\\end{bmatrix}$",
+  "reference": "[First course in Linear Algebra - Section: Nonsingular Matrices](http://linear.ups.edu/html/section-NM.html) - Definition NM",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fecf62f1bb69d3cdc2c4074"
+  },
+  "name": "Identity Matrix",
+  "type": "Definition",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "The $m \\times m$ **identity matrix**, $I_m$, is defined by:  \n$[I_m]_{ij} = \\begin{cases}\n   1 & i = j \\\\\n   0 & i \\not = j\n\\end{cases}      1 \\leq i, j \\leq m$",
+  "comment": "Notice that an identity matrix is square, and in reduced row-echelon form. Also, every column is a pivot column, and every possible pivot column appears once.  \n  \n$I_4 = \\begin{bmatrix}\n1 & 0 & 0 & 0\\\\\n0 & 1 & 0 & 0\\\\\n0 & 0 & 1 & 0\\\\\n0 & 0 & 0 & 1\n\\end{bmatrix}$",
+  "reference": "[First course in Linear Algebra - Section: Nonsingular Matrices](http://linear.ups.edu/html/section-NM.html) - Definition IM",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fecf90e1bb69d3cdc2c4075"
+  },
+  "name": "Nonsingular Matrices Row Reduce to the Identity matrix",
+  "type": "Theorem",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "Suppose that $A$ is a square matrix and $B$ is a row-equivalent matrix in reduced row-echelon form. Then $A$ is nonsingular if and only if $B$ is the identity matrix.",
+  "comment": "### Proof  \n  \n$p = \\text{A is nonsingular}$  \n$q = \\text{B is identity matrix}$  \nprove that $p \\iff q$  \n  \n$p \\gets q$  \nSuppose $B$ is the identity matrix. When the augmented matrix $[A \\mid 0]$ is row-reduced, the result is $[B \\mid 0] = [I_n \\mid 0]$. The number of nonzero rows is equal to the number of variables in the linear system of equations $\\mathcal{LS}(A, 0)$, so $n = r$ and corollary **Solution for Consistent Systems using Free Variables** gives $n - r = 0$ free variables. Thus, the homogeneous system $\\mathcal{LS}(A, 0)$ has just one solution, which must be the trivial solution. This is exactly the definition of a nonsingular matrix.  \n    \n$p \\to q$  \nIf $A$ is nonsingular, then the homogeneous system $\\mathcal{LS}(A, 0)$ has a unique solution, and has no free variables in the description of the solution set. The homogeneous system is consistent (Theorem **Homogeneous Systems are Consistent**) so Corollary **Solution for Consistent Systems using Free Variables** applies and tells us there are $n - r$ free variables. Thus, $n - r = 0$, and so $n = r$. So $B$ has $n$ pivot columns among its total of $n$ columns. This is enough to force $B$ to be the $n \\times n$ identity matrix $I_n$.\n  \n### Example  \n  \n$A = \\text{ singular } = \\begin{bmatrix}\n1 & -1 & 2\\\\\n2 & 1 & 1\\\\\n1 & 1 & 0\n\\end{bmatrix} \\underrightarrow{RREF}\n\\begin{bmatrix}\n1 & 0 & 1\\\\\n0 & 1 & -1\\\\\n0 & 0 & 1\n\\end{bmatrix}$\n    \n$B = \\text{ nonsingular } = \\begin{bmatrix}\n-7 & -6 & -12\\\\\n5 & 5 & 7\\\\\n1 & 0 & 4\n\\end{bmatrix} \\underrightarrow{RREF}\n\\begin{bmatrix}\n1 & 0 & 0\\\\\n0 & 1 & 0\\\\\n0 & 0 & 1\n\\end{bmatrix}$",
+  "reference": "[First course in Linear Algebra - Section: Nonsingular Matrices](http://linear.ups.edu/html/section-NM.html) - Theorem NMRRI",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5feda796cae03c0a1846c1ad"
+  },
+  "name": "Nonsingular Matrices have Trivial Null Spaces",
+  "type": "Theorem",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "Suppose that $A$ is a **square matrix**. Then $A$ is nonsingular if and only if the null space of $A$ is the set containing only the zero vector, i.e. $\\mathcal{N}(A) = \\{0\\}$.",
+  "comment": "### Proof  \n$p: \\mathcal{N}(A) = \\{0\\}$  \n$q: \\text{A is nonsingular}$  \n   \nProve that $p \\iff q$  \n  \nLet $\\mathcal{N}(A) = \\{0\\}$.  \nThe null space of a square matrix $A$, $\\mathcal{N}(A)$, is equal to the set of solutions to the **homogeneous system**,  $\\mathcal{LS}(A, 0)$.  \nBy definition of **nonsingular matrix**, matrix is nonsingular if and only if the set of solutions to the homogeneous system,  $\\mathcal{LS}(A, 0)$, has only a trivial solution.  \nThen $A$ is nonsingular.\n\nOther way around.  \n  \nLet $A$ be nonsingular matrix.  \nBy definition of **nonsingular matrix**, matrix is nonsingular if and only if the set of solutions to the homogeneous system,  $\\mathcal{LS}(A, 0)$, has only a trivial solution.  \nThe null space of a square matrix $A$, $\\mathcal{N}(A)$, is equal to the set of solutions to the **homogeneous system**,  $\\mathcal{LS}(A, 0)$.   \nThen $\\mathcal{N}(A) = \\{0\\}$.  \n\n",
+  "reference": "[First course in Linear Algebra - Section: Nonsingular Matrices](http://linear.ups.edu/html/section-NM.html) - Theorem NMTNS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fedab4ecae03c0a1846c1ae"
+  },
+  "name": "Nonsingular Matrices and Unique Solutions",
+  "type": "Theorem",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "Suppose that $A$ is a **square matrix**. $A$ is a **nonsingular matrix** if and only if the system $\\mathcal{LS}(A, b)$ has a unique solution for every choice of the constant vector $b$.",
+  "comment": "### Proof  \n  \n$p: \\text{A is nonsingular matrix}$  \n$q: \\mathcal{LS}(A, b) \\text{ has unique solution}$  \n  \nProve that $p \\iff q$  \n  \n$p \\gets q$  \n  \nThe hypothesis for this half of the proof is that the system $\\mathcal{LS}(A, b)$ has a unique solution for every choice of the constant vector $b$. We will make a very specific choice for $b$: $b = 0$. Then we know that the system $\\mathcal{LS}(A, 0)$ has a unique solution. But this is precisely the definition of what it means for $A$ to be **nonsingular**.  \nThat almost seems too easy! Notice that we have not used the full power of our hypothesis, but there is nothing that says we must use a hypothesis to its fullest.  \n  \n$p \\to q$  \n  \nWe assume that $A$ is nonsingular of size $n \\times n$, so we know there is a sequence of row operations that will convert $A$ into the identity matrix $I_n$ (Theorem **Nonsingular Matrices Row Reduce to the Identity matrix**). Form the augmented matrix $A' = [A \\mid b]$ and apply this same sequence of row operations to $A'$. The result will be the matrix $B' = [I_n \\mid c]$, which is in reduced row-echelon form with $r = n$. Then the augmented matrix $B'$  represents the (extremely simple) system of equations $x_i = [c]_i, 1 \\leq i \\leq n$. The vector $c$ is clearly a solution, so the system is consistent (Definition **Consistent System**). With a consistent system, we use Theorem **Solution for Consistent Systems using Free Variables** to count free variables. We find that there are $n - r = n - n = 0$ free variables, and so we therefore know that the solution is unique.",
+  "reference": "[First course in Linear Algebra - Section: Nonsingular Matrices](http://linear.ups.edu/html/section-NM.html) - Theorem NMUS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fedcb78cae03c0a1846c1af"
+  },
+  "name": "Vector Space of Column Vectors",
+  "type": "Definition",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "The vector space $\\mathbb{C}^m$ is the set of all **column vectors** of size $m$ with entries from the set of complex numbers, $\\mathbb{C}$.",
+  "comment": "When a set similar to this is defined using only column vectors where all the entries are from the real numbers, it is written as $\\mathbb{R}^m$ and is known as *Euclidean $m$-space*.",
+  "reference": "[First course in Linear Algebra - Section: Vector operations](http://linear.ups.edu/html/section-NM.html) - Definition VSCV",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fedcc6ccae03c0a1846c1b1"
+  },
+  "name": "Column Vector Equality",
+  "type": "Definition",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "Suppose that $u, v \\in \\mathbb{C}^m$. Then $u$ and $v$ are **equal**, written $u = v$ if:  \n$[u]_i = [v]_i$  \n$1 \\leq i \\leq m$",
+  "comment": "",
+  "reference": "[First course in Linear Algebra - Section: Vector operations](http://linear.ups.edu/html/section-NM.html) - Definition CVE",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fedce8ecae03c0a1846c1b2"
+  },
+  "name": "Column Vector Addition",
+  "type": "Definition",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "Suppose that $u, v \\in \\mathbb{C}^m$. The sum of $u$ and $v$ is the vector $u + v$ defined by:  \n  \n$[u + v]_i = [u]_i + [v]_i$  \n$1 \\leq i \\leq m$",
+  "comment": "$u = \\begin{bmatrix}\n2\\\\\n-3\\\\\n4\\\\\n2\n\\end{bmatrix}\nv = \\begin{bmatrix}\n-1\\\\\n5\\\\\n2\\\\\n-7\n\\end{bmatrix}$  \n  \n$u + v =$\n$\\begin{bmatrix}\n2\\\\\n-3\\\\\n4\\\\\n2\n\\end{bmatrix}\n+\n\\begin{bmatrix}\n-1\\\\\n5\\\\\n2\\\\\n-7\n\\end{bmatrix}$ \n$=$\n$\\begin{bmatrix}\n2 - 1\\\\\n-3 + 5\\\\\n4 + 2\\\\\n2 - 7\n\\end{bmatrix}$\n$=$\n$\\begin{bmatrix}\n1\\\\\n2\\\\\n6\\\\\n-5\n\\end{bmatrix}$",
+  "reference": "[First course in Linear Algebra - Section: Vector operations](http://linear.ups.edu/html/section-NM.html) - Definition CVA",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5fedd1a8cae03c0a1846c1b3"
+  },
+  "name": "Column Vector Scalar Multiplication",
+  "type": "Definition",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "Suppose $u \\in \\mathbb{C}^m$ and $\\alpha \\in \\mathbb{C}$, then the scalar multiple of $u$ by $\\alpha$ is the vector $\\alpha u$ defined by:  \n  \n$[\\alpha u]_i = \\alpha [u]_i$  \n$1 \\leq i \\leq m$",
+  "comment": "This operation takes two objects of different types, specifically a number and a vector, and combines them to create another vector. In this context we call a number a **scalar** in order to emphasize that it is not a vector.  \n  \n$u = \\begin{bmatrix}\n3\\\\\n1\\\\\n-2\\\\\n4\\\\\n-1\n\\end{bmatrix}$  \n$\\alpha = 6$   \n   \n$\\alpha u$\n$=$\n$6 \\begin{bmatrix}\n3\\\\\n1\\\\\n-2\\\\\n4\\\\\n-1\n\\end{bmatrix}$\n$=$\n$\\begin{bmatrix}\n6(3)\\\\\n6(1)\\\\\n6(-2)\\\\\n6(4)\\\\\n6(-1)\n\\end{bmatrix}$\n$=$\n$\\begin{bmatrix}\n18\\\\\n6\\\\\n-12\\\\\n24\\\\\n-6\n\\end{bmatrix}$",
+  "reference": "[First course in Linear Algebra - Section: Vector operations](http://linear.ups.edu/html/section-NM.html) - Definition CVSM",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5ff1b8ec9043be59501b1f0e"
+  },
+  "name": "Vector Space Properties of Column Vectors",
+  "type": "Theorem",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "Suppose that $\\mathbb{C}^m$ is the set of column vectors of size $m$ (Vector Space for Column Vectors) with addition and scalar multiplication. Then:  \n   \nIf $u, v \\in \\mathbb{C}^m$, then $u + v \\in \\mathbb{C}^m$ - Additive Closure, Column Vectors  \nIf $\\alpha \\in \\mathbb{C}$ and $u \\in \\mathbb{C}^m$, then $\\alpha u \\in \\mathbb{C}^m$ - Scalar Closure, Column Vectors  \nIf $u, v \\in \\mathbb{C}^m$, then $u + v = v + u$ - Commutativity, Column Vectors  \nIf $u, v, w \\in \\mathbb{C}^m$, then $u + (v + w) = (u + v) + w$ - Additive Associativity, Column Vectors  \nThere is a vector, $0$, called the **zero vector**, such that $u + 0 = u$ for all $u \\in \\mathbb{C}^m$  \nIf $u \\in \\mathbb{C}^m$, then there exists a vector $-u \\in \\mathbb{C}^m$ so that $u + (-u) = 0$ - Additive Inverses, Column Vectors  \nIf $\\alpha, \\beta \\in \\mathbb{C}$ and $u \\in \\mathbb{C}^m$, then $\\alpha(\\beta u) = (\\alpha \\beta)u$ - Scalar Multiplication Associativity, Column Vectors  \nIf $\\alpha \\in \\mathbb{C}$ and $u, v \\in \\mathbb{C}^m$, then $\\alpha(u + v) = \\alpha u + \\alpha v$ - Distributivity across Vector Addition, Column Vectors  \nIf $\\alpha, \\beta \\in \\mathbb{C}$ and $u \\in \\mathbb{C}^m$, then $(\\alpha + \\beta)u = \\alpha u + \\beta u$ - Distributivity across Scalar Addition, Column Vectors  \nIf $u \\in \\mathbb{C}^m$, then $1u = u$ - One, Column Vectors\n\n",
+  "comment": "We need to establish an **equality**, so we will do so by beginning with one side of the equality, apply various definitions and theorems (listed to the right of each step) to transform the expression from the left into the expression on the right. Here we go with a proof of property Distributivity across Scalar Addition.  \nFor $1 \\leq i \\leq m$,  \n  \n$[(\\alpha + \\beta)u]_i = (\\alpha + \\beta)[u]_i$ Definition Column Vector Scalar Multiplication  \n$= \\alpha[u]_i + \\beta[u]_i$ Property Distributivity of Complex Numbers  \n$= [\\alpha u]_i + [\\beta u]_i$ Definition Column Vector Scalar Multiplication  \n$= [\\alpha u + \\beta u]_i$ Definition Column Vector Addition  \n  \n*Other properties can be proven the same way*",
+  "reference": "[First course in Linear Algebra - Section: Vector operations](http://linear.ups.edu/html/section-NM.html) - Theorem VSPCV",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5ff36dd50e74e25c8c735551"
+  },
+  "name": "Collection (family) of sets",
+  "type": "Definition",
+  "description": "Beginner friendly Set theory",
+  "text": "The collection of sets $\\mathscr{A} = \\{A_1, A_2, A_3, . . .\\} = \\{A_i \\mid i \\in \\mathbb{N}\\}$, containing a set $A$, corresponding to each positive integer $i$ (where some universal set $U$ contains each set $A$, in the collection) is called a **family** (or **collection**) of sets indexed by the\nset $\\mathbb{N}$ of all positive integers. A positive integer $i$ used to label a set $A$, in the collection is called an **index**.",
+  "comment": "The collection $\\mathscr{A}$ is also sometimes denoted $\\{A_i\\}_{i \\in \\mathbb{N}}$, or $\\{A_i \\mid i = 1, 2, 3, . . .\\}$.  \n  \nLet $A_i = \\{i\\}$ for each $i = 1, 2, 3, . . . .$ Then $\\mathscr{A} = \\{A_i \\mid i \\in \\mathbb{N}\\} = \\{\\{1\\}, \\{2\\}, \\{3\\}, . . .\\}$ is a collection of singleton sets. Note that if positive integers $i$ and $j$ are two distinct indices, then $A_i \\cap A_j = \\emptyset$. For this reason we say that this family of sets is **pairwise disjoint** (or **mutually disjoint**).  \n\nLet $B_i = \\{1, 2, 3, . . ., i\\}$, for each $i = 1, 2, 3,. . .$ , so that $\\mathscr{B} = \\{\\{1\\}, \\{1, 2\\}, \\{1, 2, 3\\}, . . .\\}$. In this example, for any two indices $i$ and $j$,\n$i \\lt j$ implies $B_i \\subseteq B_j$. For this reason $B$ is called an **increasing** family of sets.  \n\nLet $C_i= [i, \\infty)$ for each $i = 1, 2, 3,. . .$, so that $\\mathscr{C}= \\{C_i \\mid i \\in \\mathbb{N}\\}$ is a family of closed, unbounded intervals satisfying the condition $i \\lt j$ implies $C_j \\subseteq C_i$. Any family of sets indexed by $\\mathbb{N}$ possessing this property is called a **decreasing** family of sets. In particular, a collection of intervals satisfying this property is called a **family of nested intervals**.  ",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 124, 125)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5ff375e90e74e25c8c735553"
+  },
+  "name": "Union of the collection of sets",
+  "type": "Definition",
+  "description": "Beginner friendly Set theory",
+  "text": "Let $A_i = \\{A_i \\mid i = 1, 2, 3, . . .\\}$ be a collection of sets indexed by $\\mathbb{N}$. We define **the union of the collection** $\\mathscr{A}$, denoted $\\bigcup\\limits_{i=1}^{\\infty} A_{i}$ (also denoted $\\bigcup\\limits_{i \\in \\mathbb{N}} A_{i}$ and $\\bigcup \\{A_{i} \\mid A_{i} \\in \\mathscr{A}\\}$) to be the set $\\{ x \\mid x \\in A_i, \\text{ for some } i \\in \\mathbb{N}\\} = \\{ x \\mid \\exists i \\in N \\text{ such that } x \\in A_i\\}$ ",
+  "comment": "If $\\mathscr{A}$ is a collection of sets $A_1, A_2, A_3, . . .$ , with $U$ as universal set, then $\\bigcup\\limits_{i=1}^{\\infty} A_{i}$ is a set and it has $U$ as universal set. It consists of all the elements in any of the sets $A_i$.",
+  "reference": "Bridge to Abstract Mathematics - Mathematical proof and structures 1st ed. - R. Morash (page 125)",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5ff377c80e74e25c8c735554"
+  },
+  "name": "Intersection of the collection of sets",
+  "type": "Definition",
+  "description": "Beginner friendly Set theory",
+  "text": "Let $\\mathscr{A} = \\{A_i \\mid i = 1, 2, 3, . . .\\}$ be a collection of sets indexed by $\\mathbb{N}$. We define **the intersection of the collection** $\\mathscr{A}$, denoted $\\bigcap\\limits_{i=1}^{\\infty} A_{i}$ (also denoted $\\bigcap\\limits_{i \\in \\mathbb{N}} A_{i}$, and $\\bigcap \\{A_{i} \\mid A_{i} \\in \\mathscr{A}\\}$) to be the set $\\{x \\mid x \\in A_i, \\text{ for every } i \\in \\mathbb{N}\\} = \\{x \\mid x \\in A_i, \\forall i \\in \\mathbb{N}\\}$. ",
+  "comment": "If $\\mathscr{A}$ is a collection of sets $A_1, A_2, A_3, . . .$ , with $U$ as universal set, then $\\bigcap\\limits_{i=1}^{\\infty} A_{i}$ is a set and it has $U$ as universal set. It consists only of those objects common to all the sets $A_i$.",
+  "reference": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5ffc8dd75cc34255587754f6"
+  },
+  "name": "Linear Combination of Column Vectors",
+  "type": "Definition",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "Given $n$ vectors $u_1, u_2, u_3, . . . , u_n$ from $\\mathbb{C}^m$ and $n$ scalars $\\alpha_1, \\alpha_2, \\alpha_3, . . ., \\alpha_n$, their **linear combination** is the vector $\\alpha_1u_1 + \\alpha_2u_2 + \\alpha_3u_3 + . . . + \\alpha_nu_n$",
+  "comment": "So this definition takes an equal number of scalars and vectors, combines them using scalar multiplication and vector addition and creates a single brand-new vector, of the same size as the original vectors.  \n  \nSuppose that $\\alpha_1 = 1, \\alpha_2 = -4, \\alpha_3 = 2, \\alpha_4 = -1$ and\n$u_1 = \\begin{bmatrix}\n2\\\\\n4\\\\\n-3\\\\\n1\\\\\n2\\\\\n9\n\\end{bmatrix}$\n$u_2 = \\begin{bmatrix}\n6\\\\\n3\\\\\n0\\\\\n-2\\\\\n1\\\\\n4\n\\end{bmatrix}$\n$u_3 = \\begin{bmatrix}\n-5\\\\\n2\\\\\n1\\\\\n1\\\\\n-3\\\\\n0\n\\end{bmatrix}$\n$u_4 = \\begin{bmatrix}\n3\\\\\n2\\\\\n-5\\\\\n7\\\\\n1\\\\\n3\n\\end{bmatrix}$\nthen their linear combination is   \n$\\alpha_1u_1 + \\alpha_2u_2 + \\alpha_3u_3 + \\alpha_4u_4 = (1)$\n$\\begin{bmatrix}\n2\\\\\n4\\\\\n-3\\\\\n1\\\\\n2\\\\\n9\n\\end{bmatrix}$\n$+(-4)$\n$\\begin{bmatrix}\n6\\\\\n3\\\\\n0\\\\\n-2\\\\\n1\\\\\n4\n\\end{bmatrix}$\n$+(2)$\n$\\begin{bmatrix}\n-5\\\\\n2\\\\\n1\\\\\n1\\\\\n-3\\\\\n0\n\\end{bmatrix}$\n$+(-1)$\n$\\begin{bmatrix}\n3\\\\\n2\\\\\n-5\\\\\n7\\\\\n1\\\\\n3\n\\end{bmatrix}$\n$=$\n$\\begin{bmatrix}\n2\\\\\n4\\\\\n-3\\\\\n1\\\\\n2\\\\\n9\n\\end{bmatrix}$\n$+$\n$\\begin{bmatrix}\n-24\\\\\n-12\\\\\n0\\\\\n8\\\\\n-4\\\\\n-16\n\\end{bmatrix}$\n$+$\n$\\begin{bmatrix}\n-10\\\\\n4\\\\\n2\\\\\n2\\\\\n-6\\\\\n0\n\\end{bmatrix}$\n$+$\n$\\begin{bmatrix}\n-3\\\\\n-2\\\\\n5\\\\\n-7\\\\\n-1\\\\\n-3\n\\end{bmatrix}$\n$=$\n$\\begin{bmatrix}\n-35\\\\\n-6\\\\\n4\\\\\n4\\\\\n-9\\\\\n-10\n\\end{bmatrix}$\n",
+  "reference": "[First course in Linear Algebra - Section: Linear Combinations](http://linear.ups.edu/html/section-LC.html) - Definition LCCV",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5ffc96a25cc34255587754f8"
+  },
+  "name": "Solutions to Linear Systems are Linear Combinations",
+  "type": "Theorem",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "Denote the columns of the $m \\times n$ matrix $A$ as the vectors $A_1, A_2, A_3, . . ., A_n$. Then $x \\in C^n$ is a solution to the linear system of equations $\\mathcal{LS}(A, b)$ if and only if $b$ equals the linear combination of the columns of $A$ formed with the entries of $x$,  \n  \n$[x]_1A_1 + [x]_2A_2 + [x]_3A_3 + . . . + [x]_nA_n = b$",
+  "comment": "In other words, this theorem tells us that solutions to systems of equations are linear combinations of the $n$ column vectors of the coefficient matrix $(A_j)$ which yield the constant vector $b$. Or said another way, a solution to a system of equations $\\mathcal{LS}(A, b)$ is an answer to the question “How can I form the vector $b$ as a linear combination of the columns of A?”.  \n  \n### Proof  \n  \nThe proof of this theorem is as much about a change in notation as it is about making logical deductions. Write the system of equations $\\mathcal{LS}(A, b)$ as  \n  \n$a_\\text{11} x_1 + a_\\text{12} x_2  + a_\\text{13} x_3 +  . . . + a_\\text{1n} x_n= b_1$  \n$a_\\text{21} x_1 + a_\\text{22} x_2  + a_\\text{23} x_3 +  . . . + a_\\text{2n} x_n= b_2$   \n$a_\\text{31} x_1 + a_\\text{32} x_2  + a_\\text{33} x_3 +  . . . + a_\\text{3n} x_n= b_3$  \n.    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    \n.    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    \n.    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .    .   \n$a_\\text{m1} x_1 + a_\\text{m2} x_2  + a_\\text{m3} x_3 +  . . . + a_\\text{mn} x_n= b_m$  \n  \nNotice then that the entry of the coefficient matrix $A$ in row $i$ and column $j$ has two names: a_{ij} as the coefficient of $x_j$ in equation $i$ of the system and $[A_j]_i$ as the $i\\text{-th}$ entry of the column vector in column $j$ of the coefficient matrix $A$. Likewise, entry $i$ of $b$ has two names: $b_i$ from the linear system and $[b]_i$ as an entry of a vector. Our theorem is an equivalence so we need to prove both “directions”, using decomposition:  \n  \n($\\gets$) Suppose we have the vector equality between $b$ and the linear combination of the columns of $A$. Then for $1 \\leq i \\leq m$,  \n  \n$b_i = [b]_i$ **Column Vector** Definition  \n$= [[x]_1A_1 + [x]_2A_2 + [x]_3A_3 + . . . + [x]_nA_n]_i$ **Hypothesis**  \n$= [[x]_1A_1]_i + [[x]_2A_2]_i + [[x]_3A_3]_i + . . . + [[x]_nA_n]_i$ **Column Vector Addition** Definition  \n$= [x]_1[A_1]_i + [x]_2[A_2]_i + [x]_3[A_3]_i + . . . + [x]_n[A_n]_i$ **Column Vector Scalar Multiplication** Definition   \n$= [x]_1a_{i1} + [x]_2a_{i2} + [x]_3a_{i3} + . . . + [x]_na_{in}$ **Column Vector** Definition  \n$= a_{i1}[x]_1 + a_{i2}[x]_2 + a_{i3}[x]_3 + . . . + a_{in}[x]_n$ **Commutativity of Multiplication over Complex numbers** Property  \n  \nThis says that the entries of $x$ form a solution to equation $i$ of $\\mathcal{LS}(A, b)$ for all $1 \\leq i \\leq m$, in other words, $x$ is a solution to $\\mathcal{LS}(A, b)$.\n\n($\\to$) Suppose now that $x$ is a solution to the linear system $\\mathcal{LS}(A, b)$. Then for all $1 \\leq i \\leq m$,  \n  \n$[b]_i = b_i$ **Column Vector** Definition   \n$= a_{i1}[x]_1 + a_{i2}[x]_2 + a_{i3}[x]_3 + . . . + a_{in}[x]_n$ **Hypothesis**  \n$= [x]_1a_{i1} + [x]_2a_i2 + [x]_3a_{i3} + . . . + [x]_na_{in}$ **Commutativity of Multiplication over Complex numbers** Property  \n$= [x]_1[A_1]_i + [x]_2[A_2]_i + [x]_3[A_3]_i + . . . + [x]_n[A_n]_i$ **Column Vector** Definition  \n$= [[x]_1A_1]_i + [[x]_2A_2]_i + [[x]_3A_3]_i + . . . + [[x]_nA_n]_i$ **Column Vector Scalar Multiplication** Definition   \n$= [[x]_1A_1+ [x]_2A_2 + [x]_3A_3 + . . . + [x]_nA_n]_i$ **Column Vector Addition** Definition \n",
+  "reference": "[First course in Linear Algebra - Section: Linear Combinations](http://linear.ups.edu/html/section-LC.html) - Theorem SLSLC",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5ffccef25cc34255587754f9"
+  },
+  "name": "Vector Form of Solutions to Linear Systems",
+  "type": "Theorem",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "Suppose that $[A \\mid b]$ is the **augmented matrix** for a **consistent** linear system $\\mathcal{LS}(A, b)$ of $m$ equations in $n$ variables. Let $B$ be a **row-equivalent** $m \\times (n + 1)$ matrix in reduced row-echelon form. Suppose that $B$ has $r$ pivot columns, with indices $D = \\{d_1, d_2, d_3, . . ., d_r\\}$, while the $n - r$ non-pivot columns have indices in $F = \\{f_1, f_2, f_3, . . ., f_{n-r}, n + 1\\}$.   \nDefine vectors $c, u_j, 1 \\leq j \\leq n - r$ of size $n$ by   \n$[c]_i = \\begin{cases}\n   0 &\\text{if } i \\in F \\\\\n   [B]_{k, n+1} &\\text{if } i \\in D, i = d_k\n\\end{cases}$  \n$[u_j]_i = \\begin{cases}\n   1 &\\text{if } i \\in F, i = f_j \\\\\n   0 &\\text{if } i \\in F, i \\not = f_j \\\\\n   -[B]_{k, f_j} &\\text{if } i \\in D, i = d_k\n\\end{cases}$    \n  \nThen the set of solutions to the system of equations $\\mathcal{LS}(A, b)$ is $S = \\{c + \\alpha_1u_1 + \\alpha_2u_2 + \\alpha_3u_3 + . . . + \\alpha_{n-r}u_{n-r} \\mid \\alpha_1, \\alpha_2, \\alpha_3, . . ., \\alpha_{n-r} \\in \\mathbb{C}\\}$",
+  "comment": "### Proof  \n  \nFirst, $\\mathcal{LS}(A, b)$ is equivalent to the linear system of equations that has the matrix $B$ as its augmented matrix (Theorem **Row-Equivalent Matrices represent Equivalent Systems**), so we need only show that $S$ is the solution set for the system with $B$ as its augmented matrix. The conclusion of this theorem is that the solution set is equal to the set $S$, so we will apply $A \\subseteq B \\land B \\subseteq A \\to A = B$.  \n  \nWe begin by showing that every element of $S$ is indeed a solution to the system. Let $\\alpha_1, \\alpha_2, \\alpha_3, . . ., \\alpha_{n-r}$ be one choice of the scalars used to describe elements of $S$. So an arbitrary element of $S$ , which we will consider as a proposed solution is   \n$x = c + \\alpha_1u_1 + \\alpha_2u_2 + \\alpha_3u_3 + . . . + \\alpha_{n-r}u_{n-r}$  \n  \nWhen $r + 1 \\leq l \\leq m$, row $l$ of the matrix $B$ is a zero row, so the equation represented by that row is always true, no matter which solution vector we propose. So concentrate on rows representing equations $1 \\leq l \\leq r$. We evaluate equation $l$ of the system represented by $B$ with the proposed solution vector $x$ and refer to the value of the left-hand side of the equation as $\\beta_l$,  \n$\\beta_l = [B]_{l1}[x]_1 + [B]_{l2}[x]_2 + [B]_{l3}[x]_3 + . . . + [B]_{ln}[x]_n$  \n  \nSince $[B]_{ld_i} = 0$ for all $1 \\leq i \\leq r$, except that $[B]_{ld_l} = 1$, we see that $\\beta_l$ simplifies to  \n$\\beta_l = [x]_{d_l} + [B]_{lf_1}[x]_{f_1} + [B]_{lf_2}[x]_{f_2} + [B]_{lf_3}[x]_{f_3} + . . . + [B]_{lf_{n-r}}[x]_{f_{n-r}}$  \n  \nNotice that for $1 \\leq i \\leq n-r$,   \n$[x]_{f_i} = [c]_{f_i} + \\alpha_1[u_1]_{f_i} + \\alpha_2[u_2]_{f_i} + . . . + \\alpha_i[u_i]_{f_i} + . . . + \\alpha_{n-r}[u_{n-r}]_{f_i}$  \n$= 0 + \\alpha_1(0) + \\alpha_2(0) + . . . + \\alpha_i(1) + . . . + \\alpha_{n-r}(0) = \\alpha_i$\n  \nSo $\\beta_l$ simplifies further, and we expand the first term   \n$\\beta_l = [x]_{d_l} + [B]_{lf_1}\\alpha_1 + [B]_{lf_2}\\alpha_2 + [B]_{lf_3}\\alpha_3 + . . . + [B]_{lf_{n-r}}\\alpha_{n-r}$  \n$= [c + \\alpha_1u_1 + \\alpha_2u_2 + \\alpha_3u_3 + . . . + \\alpha_{n-r}u_{n-r}]_{d_l} + [B]_{lf_1}\\alpha_1 + [B]_{lf_2}\\alpha_2 + [B]_{lf_3}\\alpha_3 + . . . + [B]_{lf_{n-r}}\\alpha_{n-r}$  \n$= [c]_{dl} + \\alpha_1[u_1]_{d_l} + \\alpha_2[u_2]_{d_l} + \\alpha_3[u_3]_{d_l} + . . . + \\alpha_{n-r}[u_{n-r}]_{d_l} + [B]_{lf_1}\\alpha_1 + [B]_{lf_2}\\alpha_2 + [B]_{lf_3}\\alpha_3 + . . . + [B]_{lf_{n-r}}\\alpha_{n-r}$\n$= [B]_{l, n + 1} + \\alpha_1(-[B]_{lf_1}) + \\alpha_2(-[B]_{lf_2}) + \\alpha_3(-[B]_{lf_3}) + . . . + \\alpha_{n-r}(-[B]_{lf_{n-r}}) + [B]_{lf_1}\\alpha_1 + [B]_{lf_2}\\alpha_2 + [B]_{lf_3}\\alpha_3 + . . . + [B]_{lf_{n-r}}\\alpha_{n-r}$   \n$= [B]_{l,n + 1}$\n  \nSo $\\beta_l$ began as the left-hand side of equation $l$ of the system represented by $B$ and we now know it equals $[B]_{l, n + 1}$, the constant term for equation $l$ of this system. So the arbitrarily chosen vector from $S$ makes every equation of the system true, and therefore is a solution to the system. So all the elements of $S$ are solutions to the system.  \n  \nFor the second half of the proof, assume that $x$ is a solution vector for the system having $B$ as its augmented matrix. For convenience and clarity, denote the entries of $x$ by $x_i$, in other words, $x_i = [x]_i$. We desire to show that this solution vector is also an element of the set $S$. Begin with the observation that a solution vector's entries makes equation $l$ of the system true for all $1 \\leq l \\leq m$  \n$[B]_{l,1}x_1 + [B]_{l,2}x_2 + [B]_{l,3}x_3 + . . . + [B]_{l,n}x_n = [B]_{l, n + 1}$  \n  \nWhen $l \\leq r$, the pivot columns of $B$ have zero entries in row $l$ with the exception of column $d_l$, which will contain a $1$. So for $1 \\leq l \\leq r$, equation $l$ simplifies to $1x_{d_l} + [B]_{l,f_1}x_{f_1} + [B]_{l,f_2}x_{f_2} + [B]_{l,f_3}x_{f_3} + . . . + [B]_{l,f_{n - r}}x_{f_{n - r}} = [B]_{l,n + 1}$  \n  \nThis allows us to write,  \n$[x]_{d_l} = x_{d_l}$  \n$= [B]_{l, n + 1} - [B]_{l, f_1}x_{f_1} - [B]_{l,f_2}x_{f_2} - [B]_{l, f_3}x_{f_3} - . . . - [B]_{l, f_{n - r}}x_{f_{n - r}}$  \n$= [c]_{d_l} + x_{f_1}[u_1]_{d_l} + x_{f_2}[u_2]_{d_l} + x_{f_3}[u_3]_{d_l} + . . . + x_{f_{n - r}}[u_{n - r}]_{d_{l}}$\n$= [c + x_{f_1}u_1 + x_{f_2}u_2 + x_{f_3}u_3 + . . . + x_{f_{n - r}}u_{n - r}]_{d_l}$  \n  \nThis tells us that the entries of the solution vector $x$ corresponding to dependent variables (indices in $D$), are equal to those of a vector in the set  $S$. We still need to check the other entries of the solution vector $x$ corresponding to the free variables (indices in $F$) to see if they are equal to the entries of the same vector in the set $S$. To this end, suppose $i \\in F$ and $i = f_j$. Then  \n  \n$[x]_i = x_i = x_{f_j}$  \n$= 0 + 0x_{f_1} + 0x_{f_2} + 0x_{f_3} + . . . + 0x_{f_j - 1} + 1x_{f_j} + 0x_{f_{j + 1}} + . . . + 0x_{f_{n - r}}$  \n$= [c]_i + x_{f_1}[u_1]_i + x_{f_2}[u_2]_i + x_{f_3}[u_3]_i + . . . + x_{f_j}[u_j]_i + . . . + x_{f_{n - r}}[u_{n - r}]_i$  \n$= [c + x_{f_1}u_1 + x_{f_2}u_2 + . . . + x_{f_{n - r}}u_{n - r}]_i$\n\nSo entries of  $x$ and $c + x_{f_1}u_1 + x_{f_2}u_2 + . . . + x_{f_{n - r}}u_{n - r}$ are equal and therefore by **Column Vector Equality** Definition they are equal vectors. Since $x_{f_1}, x_{f_2}, x_{f_3}, . . ., x_{f_{n-r}} are scalars, this shows us that $x$ qualifies for membership in $S$. So the set $S$ contains all of the solutions to the system.  \n  \nNote that both halves of the proof indicate that $\\alpha_i = [x]_{f_i}$. In other words, the arbitrary scalars, $\\alpha_i$, in the description of the set $S$ actually have more meaning — they are the values of the free variables $[x]_{f_i}, 1 \\leq i \\leq n - r$. So we will often exploit this observation in our descriptions of solution sets.  \n  \n### Example  \n  \n$x_1 + 4x_2 - x_4 + 7x_6 - 9x_7 = 3$  \n$2x_1 + 8x_2 - x_3 + 3x_4 + 9x_5 - 13x_6 + 7x_7 = 9$  \n$2x_3 - 3x_4 - 4x_5 + 12x_6 - 8x_7 = 1$  \n$- x_1 - 4x_2 + 2x_3 + 4x_4 + 8x_5 - 31x_6 + 37x_7 = 4$  \n  \nis a linear system of $m = 4$ equations in $n = 7$ variables. Row-reducing the augmented matrix yields  \n$\\begin{bmatrix}\n1 & 4 & 0 & 0 & 2 & 1 & -3 & 4\\\\\n0 & 0 & 1 & 0 & 1 & -3 & 5 & 2\\\\\n0 & 0 & 0 & 1 & 2 & -6 & 6 & 1\\\\\n0 & 0 & 0 & 0 & 0 & 0 & 0 & 0  \n\\end{bmatrix}$\n  \nand we see $r = 3$ pivot columns, with indices $D = \\{1, 3, 4\\}$. So the $r = 3$ dependent variables are $x_1, x_3, x_4$. The non-pivot columns have indices in $F = \\{2, 5, 6, 7, 8}$, so the $n - r = 4$ free variables are $x_2, x_5, x_6, x_7$.  \n  \n**Step 1**. Write the vector of variables ($x$) as a fixed vector ($c$), plus a linear combination of $n - r = 4$ vectors ($u_1, u_2, u_3, u_4$), using the free variables as the scalars.  \n  \n$x =$\n$\\begin{bmatrix}\nx_1\\\\\nx_2\\\\\nx_3\\\\\nx_4\\\\\nx_5\\\\\nx_6\\\\  \nx_7\n\\end{bmatrix}$\n$=$\n$\\begin{bmatrix}\n\\text{}\\\\\n\\text{}\\\\\n\\text{}\\\\\n\\text{}\\\\\n\\text{}\\\\\n\\text{}\\\\  \n\\text{}\n\\end{bmatrix}$\n$+ x_2$\n$\\begin{bmatrix}\n\\text{}\\\\\n\\text{}\\\\\n\\text{}\\\\\n\\text{}\\\\\n\\text{}\\\\\n\\text{}\\\\  \n\\text{}\n\\end{bmatrix}$\n$+ x_5$\n$\\begin{bmatrix}\n\\text{}\\\\\n\\text{}\\\\\n\\text{}\\\\\n\\text{}\\\\\n\\text{}\\\\\n\\text{}\\\\  \n\\text{}\n\\end{bmatrix}$\n$+ x_6$\n$\\begin{bmatrix}\n\\text{}\\\\\n\\text{}\\\\\n\\text{}\\\\\n\\text{}\\\\\n\\text{}\\\\\n\\text{}\\\\  \n\\text{}\n\\end{bmatrix}$\n$+ x_7$\n$\\begin{bmatrix}\n\\text{}\\\\\n\\text{}\\\\\n\\text{}\\\\\n\\text{}\\\\\n\\text{}\\\\\n\\text{}\\\\  \n\\text{}\n\\end{bmatrix}$  \n  \n**Step 2**. For each free variable, use $0$'s and $1$'s to ensure equality for the corresponding entry of the vectors.  \n  \n$x =$\n$\\begin{bmatrix}\nx_1\\\\\nx_2\\\\\nx_3\\\\\nx_4\\\\\nx_5\\\\\nx_6\\\\  \nx_7\n\\end{bmatrix}$\n$=$\n$\\begin{bmatrix}\n\\text{}\\\\\n0\\\\\n\\text{}\\\\\n\\text{}\\\\\n0\\\\\n0\\\\  \n0\n\\end{bmatrix}$\n$+ x_2$\n$\\begin{bmatrix}\n\\text{}\\\\\n1\\\\\n\\text{}\\\\\n\\text{}\\\\\n0\\\\\n0\\\\  \n0\n\\end{bmatrix}$\n$+ x_5$\n$\\begin{bmatrix}\n\\text{}\\\\\n0\\\\\n\\text{}\\\\\n\\text{}\\\\\n1\\\\\n0\\\\  \n0\n\\end{bmatrix}$\n$+ x_6$\n$\\begin{bmatrix}\n\\text{}\\\\\n0\\\\\n\\text{}\\\\\n\\text{}\\\\\n0\\\\\n1\\\\  \n0\n\\end{bmatrix}$\n$+ x_7$\n$\\begin{bmatrix}\n\\text{}\\\\\n0\\\\\n\\text{}\\\\\n\\text{}\\\\\n0\\\\\n0\\\\  \n1\n\\end{bmatrix}$  \n  \n**Step 3**. For each dependent variable, use the augmented matrix to formulate an equation expressing the dependent variable as a constant plus multiples of the free variables. Convert this equation into entries of the vectors that ensure equality for each dependent variable, one at a time  \n  \n$x_1 = 4 - 4x_2 - 2x_5 - 1x_6 + 3x_7 \\to$\n$x =$\n$\\begin{bmatrix}\nx_1\\\\\nx_2\\\\\nx_3\\\\\nx_4\\\\\nx_5\\\\\nx_6\\\\  \nx_7\n\\end{bmatrix}$\n$=$\n$\\begin{bmatrix}\n4\\\\\n0\\\\\n\\text{}\\\\\n\\text{}\\\\\n0\\\\\n0\\\\  \n0\n\\end{bmatrix}$\n$+ x_2$\n$\\begin{bmatrix}\n-4\\\\\n1\\\\\n\\text{}\\\\\n\\text{}\\\\\n0\\\\\n0\\\\  \n0\n\\end{bmatrix}$\n$+ x_5$\n$\\begin{bmatrix}\n-2\\\\\n0\\\\\n\\text{}\\\\\n\\text{}\\\\\n1\\\\\n0\\\\  \n0\n\\end{bmatrix}$\n$+ x_6$\n$\\begin{bmatrix}\n-1\\\\\n0\\\\\n\\text{}\\\\\n\\text{}\\\\\n0\\\\\n1\\\\  \n0\n\\end{bmatrix}$\n$+ x_7$\n$\\begin{bmatrix}\n3\\\\\n0\\\\\n\\text{}\\\\\n\\text{}\\\\\n0\\\\\n0\\\\  \n1\n\\end{bmatrix}$  \n  \n$x_3 = 2 + 0x_2 - x_5 + 3x_6 - 5x_7 \\to$\n$x =$\n$\\begin{bmatrix}\nx_1\\\\\nx_2\\\\\nx_3\\\\\nx_4\\\\\nx_5\\\\\nx_6\\\\  \nx_7\n\\end{bmatrix}$\n$=$\n$\\begin{bmatrix}\n4\\\\\n0\\\\\n2\\\\\n\\text{}\\\\\n0\\\\\n0\\\\  \n0\n\\end{bmatrix}$\n$+ x_2$\n$\\begin{bmatrix}\n-4\\\\\n1\\\\\n0\\\\\n\\text{}\\\\\n0\\\\\n0\\\\  \n0\n\\end{bmatrix}$\n$+ x_5$\n$\\begin{bmatrix}\n-2\\\\\n0\\\\\n-1\\\\\n\\text{}\\\\\n1\\\\\n0\\\\  \n0\n\\end{bmatrix}$\n$+ x_6$\n$\\begin{bmatrix}\n-1\\\\\n0\\\\\n3\\\\\n\\text{}\\\\\n0\\\\\n1\\\\  \n0\n\\end{bmatrix}$\n$+ x_7$\n$\\begin{bmatrix}\n3\\\\\n0\\\\\n-5\\\\\n\\text{}\\\\\n0\\\\\n0\\\\  \n1\n\\end{bmatrix}$   \n  \n$x_4 = 1 + 0x_2 - 2x_5 + 6x_6 - 6x_7 \\to$\n$x =$\n$\\begin{bmatrix}\nx_1\\\\\nx_2\\\\\nx_3\\\\\nx_4\\\\\nx_5\\\\\nx_6\\\\  \nx_7\n\\end{bmatrix}$\n$=$\n$\\begin{bmatrix}\n4\\\\\n0\\\\\n2\\\\\n1\\\\\n0\\\\\n0\\\\  \n0\n\\end{bmatrix}$\n$+ x_2$\n$\\begin{bmatrix}\n-4\\\\\n1\\\\\n0\\\\\n0\\\\\n0\\\\\n0\\\\  \n0\n\\end{bmatrix}$\n$+ x_5$\n$\\begin{bmatrix}\n-2\\\\\n0\\\\\n-1\\\\\n-2\\\\\n1\\\\\n0\\\\  \n0\n\\end{bmatrix}$\n$+ x_6$\n$\\begin{bmatrix}\n-1\\\\\n0\\\\\n3\\\\\n6\\\\\n0\\\\\n1\\\\  \n0\n\\end{bmatrix}$\n$+ x_7$\n$\\begin{bmatrix}\n3\\\\\n0\\\\\n-5\\\\\n-6\\\\\n0\\\\\n0\\\\  \n1\n\\end{bmatrix}$\n",
+  "reference": "[First course in Linear Algebra - Section: Linear Combinations](http://linear.ups.edu/html/section-LC.html) - Theorem VFSLS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "5ffee7897530044014a9436c"
+  },
+  "name": "Particular Solution plus Homogeneous Solutions",
+  "type": "Theorem",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "Suppose that $w$ is one solution to the linear system of equations $\\mathcal{LS}(A, b)$. Then $y$ is a solution to $\\mathcal{LS}(A, b)$ if and only if $y = w + z$ for some vector $z \\in \\mathcal{N}(A)$.",
+  "comment": "### Proof  \n  \nLet $A_1, A_2, A_3, . . . , A_n$ be the columns of the coefficient matrix $A$.\n\n($\\gets$) Suppose $y = w + z$ and $z \\in \\mathcal{N}(A)$. Then  \n$b = [w]_1A_1 + [w]_2A_2 + [w]_3A_3 + . . . + [w]_nA_n$ - Theorem **Solutions to Linear Systems are Linear Combinations**  \n$= [w]_1A_1 + [w]_2A_2 + [w]_3A_3 + . . . + [w]_nA_n + 0$ - Property $u + 0 = u$  \n$= [w]_1A_1 + [w]_2A_2 + [w]_3A_3 + . . . + [w]_nA_n + [z]_1A_1 + [z]_2A_2 + [z]_3A_3 + . . . + [z]_nA_n$ - Theorem **Solutions to Linear Systems are Linear Combinations**   \n$=([w]_1 + [z]_1)A_1 + ([w]_2 + [z]_2)A_2 + ([w]_3 + [z]_3)A_3 + . . . + ([w]_n + [z]_n)A_n$ - **Distributivity**  \n$= +[w+z]_1A_1 + [w+z]_2A_2 + . . . + [w+z]_nA_n$ - Definition **Column Vector Addition**  \n$= [y]_1A_1 + [y]_2A_2 + [y]_3A_3 + . . . + [y]_nA_n$ - Definition of $y$  \n  \nApplying Theorem **Solutions to Linear Systems are Linear Combinations** we see that the vector $y$ is a solution to $\\mathcal{LS}(A, b)$.  \n  \n($\\to$) Suppose $y$ is a solution to $\\mathcal{LS}(A, b)$. Then  \n  \n$0 = b - b$  \n$= [y]_1A_1 + [y]_2A_2 + [y]_3A_3 + . . . + [y]_nA_n - ([w]_1A_1 + [w]_2A_2 + [w]_3A_3 + . . . + [w]_nA_n)$ - Theorem **Solutions to Linear Systems are Linear Combinations**  \n$= ([y]_1 - [w]_1)A_1 + ([y]_2 - [w]_2)A_2 + ([y]_3 - [w]_3)A_3 + . . . + ([y]_n - [w]_n)A_n$ - **Distributivity**   \n$= [y - w]_1A_1 + [y - w]_2A_2 + [y - w]_3A_3 + . . . + [y - w]_nA_n$ - Definition **Column Vector Addition**  \n\nBy Theorem **Solutions to Linear Systems are Linear Combinations** we see that the vector $y - w$ is a solution to the homogeneous system $\\mathcal{LS}(A, 0)$ and by Definition **Null Space of a Matrix**, $y - w \\in \\mathcal{N}(A)$. In other words, $y - w = z$ for some vector $z \\in \\mathcal{N}(A)$. Rewritten, this is $y = w + z$, as desired.  \n  \n### Consequence  \n  \nNonsingular coefficient matrices lead to unique solutions for every choice of the vector of constants. What does this say about **singular matrices**? A singular matrix $A$ has a nontrivial null space (Theorem **Nonsingular Matrices have Trivial Null Spaces**). For a given vector of constants, $b$, the system $\\mathcal{LS}(A, b)$ could be inconsistent, meaning there are no solutions. But if there is at least one solution ($w$), then this theorem tells us there will be infinitely many solutions because of the role of the infinite null space for a singular matrix. So a system of equations with a singular coefficient matrix never has a unique solution. With a singular coefficient matrix, either there are no solutions, or infinitely many solutions, depending on the choice of the vector of constants ($b$).",
+  "reference": "[First course in Linear Algebra - Section: Linear Combinations](http://linear.ups.edu/html/section-LC.html) - Theorem PSPHS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60007a9e3391b6060415740d"
+  },
+  "name": "Span of a Set of Column Vectors",
+  "type": "Definition",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "Given a set of vectors $S = \\{u_1, u_2, u_3, . . . , u_p\\}$, their span, $⟨ S ⟩$, is the set of all possible linear combinations of $u_1, u_2, u_3, . . ., u_p$. Symbolically,  \n  \n$⟨S⟩ = \\{\\alpha_1u_1 + \\alpha_2u_2 + \\alpha_3u_3 + . . . + \\alpha_pu_p \\mid \\alpha_i \\in \\mathbb{C}, 1 \\leq i \\leq p\\} = \\Bigg\\{ \\displaystyle\\sum_{i = 1}^{p} \\alpha_iu_i \\mid \\alpha_i \\in \\mathbb{C}, 1 \\leq i \\leq p \\Bigg\\}$",
+  "comment": "The span is just a **set of vectors**, though in all but one situation it is an infinite set. (Zero vectors?) So we start with a finite collection of vectors \n$S$ ($p$ of them to be precise), and use this finite set to describe an infinite set of vectors, $⟨S⟩$. Confusing the finite set $S$ with the infinite set \n$⟨S⟩$ is one of the most persistent problems in understanding introductory linear algebra. The most obvious question about a set is if a particular item of the correct type is in the set, or not in the set.  \n  \nConsider the set of 5 vectors,  $S$, from $\\mathbb{C}^4$  \n$S = \\Bigg\\{$\n$\\begin{bmatrix}\n1\\\\\n1\\\\\n3\\\\\n1\n\\end{bmatrix},$\n$\\begin{bmatrix}\n2\\\\\n1\\\\\n2\\\\\n-1\n\\end{bmatrix},$\n$\\begin{bmatrix}\n7\\\\\n3\\\\\n5\\\\\n-5\n\\end{bmatrix},$\n$\\begin{bmatrix}\n1\\\\\n1\\\\\n-1\\\\\n2\n\\end{bmatrix},$\n$\\begin{bmatrix}\n-1\\\\\n0\\\\\n9\\\\\n0\n\\end{bmatrix}$\n$\\Bigg\\}$  \n  \nand consider the infinite set of vectors $⟨S⟩$ formed from all possible linear combinations of the elements of $S$. Here are two vectors we definitely know are elements of $⟨S⟩$, since we will construct them in accordance with Definition **Span of a Set of Column Vectors**  \n  \n$w =$\n$(2)\\begin{bmatrix}\n1\\\\\n1\\\\\n3\\\\\n1\n\\end{bmatrix} +$\n$(1)\\begin{bmatrix}\n2\\\\\n1\\\\\n2\\\\\n-1\n\\end{bmatrix} +$\n$(-1)\\begin{bmatrix}\n7\\\\\n3\\\\\n5\\\\\n-5\n\\end{bmatrix} +$\n$(2)\\begin{bmatrix}\n1\\\\\n1\\\\\n-1\\\\\n2\n\\end{bmatrix} +$\n$(3)\\begin{bmatrix}\n-1\\\\\n0\\\\\n9\\\\\n0\n\\end{bmatrix}$\n$=\\begin{bmatrix}\n-4\\\\\n2\\\\\n28\\\\\n10\n\\end{bmatrix}$  \n  \n$x =$\n$(5)\\begin{bmatrix}\n1\\\\\n1\\\\\n3\\\\\n1\n\\end{bmatrix} +$\n$(-6)\\begin{bmatrix}\n2\\\\\n1\\\\\n2\\\\\n-1\n\\end{bmatrix} +$\n$(-3)\\begin{bmatrix}\n7\\\\\n3\\\\\n5\\\\\n-5\n\\end{bmatrix} +$\n$(4)\\begin{bmatrix}\n1\\\\\n1\\\\\n-1\\\\\n2\n\\end{bmatrix} +$\n$(2)\\begin{bmatrix}\n-1\\\\\n0\\\\\n9\\\\\n0\n\\end{bmatrix}$\n$=\\begin{bmatrix}\n-26\\\\\n-6\\\\\n2\\\\\n34\n\\end{bmatrix}$\n",
+  "reference": "[First course in Linear Algebra - Section: Spanning Sets](http://linear.ups.edu/html/section-SS.html) - Definition SSCV",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60007fc93391b6060415740f"
+  },
+  "name": "Spanning Sets for Null Spaces",
+  "type": "Theorem",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "Suppose that $A$ is an $m \\times n$ matrix, and $B$ is a row-equivalent matrix in reduced row-echelon form. Suppose that $B$ has $r$ pivot columns, with indices given by $D = \\{d_1, d_2, d_3, . . . , d_r\\}$, while the $n - r$ non-pivot columns have indices $F = \\{f_1, f_2, f_3, . . ., f_{n - r}, n + 1\\}$. Construct the $n - r$ vectors $z_j, 1 \\leq j \\leq n - r$ of size $n$,  \n  \n$[z_j]_i = \\begin{cases}\n1 &\\text{if } i \\in F, i = F_j \\\\\n0 &\\text{if } i \\in F, i \\not = F_j \\\\\n-[B]_{k, f_j} &\\text{if } i \\in D, i = d_k\n\\end{cases}$",
+  "comment": "Notice that the hypotheses of Theorem **Vector Form of Solutions to Linear Systems** and Theorem **Spanning Sets for Null Spaces** are slightly different. In the former, $B$ is the row-reduced version of an augmented matrix of a linear system, while in the latter, $B$ is the row-reduced version of an arbitrary matrix.  \n  \nWhen a system of equations is **homogeneous** the solution set can be expressed in the form described by Theorem **Vector Form of Solutions to Linear Systems** where the vector $c$ is the **zero vector**. We can essentially ignore this vector, so that the remainder of the typical expression for a solution looks like an arbitrary linear combination, where the scalars are the free variables and the vectors are $u_1, u_2, u_3, . . ., u_{n - r}$. Which sounds a lot like a span. This is the substance of this theorem.\n  \n### Proof  \n  \nConsider the homogeneous system with $A$ as a coefficient matrix, $\\mathcal{LS}(A, 0)$. Its set of solutions, $S$, is by Definition **Null Space of a Matrix**, the null space of $A$, $\\mathcal{N}(A)$. Let $B′$ denote the result of row-reducing the augmented matrix of this homogeneous system. Since the system is homogeneous, the final column of the augmented matrix will be all zeros, and after any number of row operations (Definition **Row Operations**), the column will still be all zeros. So $B′$ has a final column that is totally zeros.  \n  \nNow apply Theorem **Vector Form of Solutions to Linear Systems** to $B′$, after noting that our homogeneous system must be consistent (Theorem **Homogenous Systems are Consistent**). The vector $c$ has zeros for each entry that has an index in $F$. For entries with their index in $D$, the value is $-[B′]_{k, n + 1}$, but for $B′$ any entry in the final column (index $n + 1$) is zero. So $c = 0$ . The vectors $z_j, 1 \\leq j \\leq n - r$ are identical to the vectors $u_j, 1 \\leq j \\leq n - r$ described in Theorem **Vector Form of Solutions to Linear Systems**. Putting it all together and applying Definition **Span of a Set of Column Vectors** in the final step,  \n  \n$\\mathcal{N}(A) = S$  \n$= \\{c + \\alpha_1u_1 + \\alpha_2u_2 + \\alpha_3u_3 + . . . + \\alpha_{n - r}u_{n - r} \\mid \\alpha_1, \\alpha_2, \\alpha_3, . . . , \\alpha_{n - r} \\in \\mathbb{C}\\}$  \n$=\\{\\alpha_1u_1 + \\alpha_2u_2 + \\alpha_3u_3 + . . . + \\alpha_{n - r}u_{n - r} \\mid \\alpha_1, \\alpha_2, \\alpha_3, . . . , \\alpha_{n - r} \\in \\mathbb{C}\\}$  \n$=⟨\\{z_1, z_2, z_3, . . ., z_{n - r}\\}⟩$\n  \n### ToDo Example",
+  "reference": "[First course in Linear Algebra - Section: Spanning Sets](http://linear.ups.edu/html/section-SS.html) - Theorem SSNS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6006da2ea5a9a54e30e1b7fe"
+  },
+  "name": "Relation of Linear Dependence for Column Vectors",
+  "type": "Definition",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "Given a set of vectors $S = \\{u_1, u_2, u_3, . . ., u_n\\}$, a true statement of the form $\\alpha_1u_1 + \\alpha_2u_2 + \\alpha_3u_3 + . . . + \\alpha_nu_n = 0$ is a **relation of linear dependence** on $S$. If this statement is formed in a trivial fashion, i.e. $\\alpha_i = 0, 1 \\leq i \\leq n$, then we say it is the **trivial relation of linear dependence** on $S$.",
+  "comment": "Notice that a relation of linear dependence is an equation. Though most of it is a linear combination, it is not a linear combination (that would be a vector).",
+  "reference": "[First course in Linear Algebra - Linear Independence](http://linear.ups.edu/html/section-LI.html) - Definition RLDCV",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6006de4ca5a9a54e30e1b800"
+  },
+  "name": "Linear Independence of Column Vectors",
+  "type": "Definition",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "The set of vectors $S = \\{u_1, u_2, u_3, . . ., u_n\\}$ is **linearly dependent** if there is a relation of linear dependence on $S$ that is **not trivial**. In the case where the only relation of linear dependence on $S$ is the trivial one, then $S$ is a **linearly independent** set of vectors.",
+  "comment": "Linear independence is a property of a set of vectors. It is easy to take a set of vectors, and an equal number of scalars, all zero, and form a linear combination that equals the zero vector. When the easy way is the only way, then we say the set is linearly independent.  \n  \nConsider the set of $n = 4$ vectors from $\\mathbb{C}^5$,  \n$S = \\Bigg\\{$\n$\\begin{bmatrix}\n2\\\\\n-1\\\\\n3\\\\\n1\\\\\n2\n\\end{bmatrix},$\n$\\begin{bmatrix}\n1\\\\\n2\\\\\n-1\\\\\n5\\\\\n2\n\\end{bmatrix},$\n$\\begin{bmatrix}\n2\\\\\n1\\\\\n-3\\\\\n6\\\\\n1\n\\end{bmatrix},$\n$\\begin{bmatrix}\n-6\\\\\n7\\\\\n-1\\\\\n0\\\\\n1\n\\end{bmatrix}$\n$\\Bigg\\}$  \n  \nTo determine linear independence we first form a relation of linear dependence,  \n$\\alpha_1\\begin{bmatrix}\n2\\\\\n-1\\\\\n3\\\\\n1\\\\\n2\n\\end{bmatrix} +$\n$\\alpha_2\\begin{bmatrix}\n1\\\\\n2\\\\\n-1\\\\\n5\\\\\n2\n\\end{bmatrix} +$\n$\\alpha_3\\begin{bmatrix}\n2\\\\\n1\\\\\n-3\\\\\n6\\\\\n1\n\\end{bmatrix} +$\n$\\alpha_4\\begin{bmatrix}\n-6\\\\\n7\\\\\n-1\\\\\n0\\\\\n1\n\\end{bmatrix}$\n$= 0$  \n  \nWe know that $\\alpha_1 = \\alpha_2 = \\alpha_3 = \\alpha_4 = 0$ is a solution to this equation, but that is of no interest whatsoever. That is always the case, no matter what four vectors we might have chosen. We are curious to know if there are other, nontrivial, solutions. Theorem **Solutions to Linear Systems are Linear Combinations** tells us that we can find such solutions as solutions to the homogeneous system $\\mathcal{LS}(A, 0)$ where the coefficient matrix has these four vectors as columns, which we then row-reduce  \n  \n$A = \\begin{bmatrix}\n2 & 1 & 2 & -6\\\\\n-1 & 2 & 1 & 7\\\\\n3 & -1 & -3 & -1\\\\\n1 & 5 & 6 & 0\\\\\n2 & 2 & 1 & 1\n\\end{bmatrix} \\xrightarrow{RREF}$\n$\\begin{bmatrix}\n1 & 0 & 0 & -2\\\\\n0 & 1 & 0 & 4\\\\\n0 & 0 & 1 & -3\\\\\n0 & 0 & 0 & 0\\\\\n0 & 0 & 0 & 0\n\\end{bmatrix}$  \n  \nWe could solve this homogeneous system completely, but for this example all we need is one nontrivial solution. Setting the lone free variable to any nonzero value, such as $x_4 = 1$, yields the nontrivial solution  \n$x = \\begin{bmatrix}\n2\\\\\n-4\\\\\n3\\\\\n1\n\\end{bmatrix}$  \n  \ncompleting our application of Theorem **Solutions to Linear Systems are Linear Combinations**, we have  \n$(2)\\begin{bmatrix}\n2\\\\\n-1\\\\\n3\\\\\n1\\\\\n2\n\\end{bmatrix} +$\n$(-4)\\begin{bmatrix}\n1\\\\\n2\\\\\n-1\\\\\n5\\\\\n2\n\\end{bmatrix} +$\n$(3)\\begin{bmatrix}\n2\\\\\n1\\\\\n-3\\\\\n6\\\\\n1\n\\end{bmatrix} +$\n$(1)\\begin{bmatrix}\n-6\\\\\n7\\\\\n-1\\\\\n0\\\\\n1\n\\end{bmatrix}$\n$= 0$  \n  \nThis is a relation of linear dependence on $S$ that is not trivial, so we conclude that $S$ is linearly dependent.",
+  "reference": "[First course in Linear Algebra - Linear Independence](http://linear.ups.edu/html/section-LI.html) - Definition LICV",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6006e0b9a5a9a54e30e1b801"
+  },
+  "name": "Linearly Independent Vectors and Homogeneous Systems",
+  "type": "Theorem",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "Suppose that $S = \\{v_1, v_2, v_3, . . ., v_n\\} \\subseteq \\mathbb{C}^m$ is a set of vectors and $A$ is the $m \\times n$ matrix whose columns are the vectors in $S$. Then $S$ is a linearly independent set if and only if the homogeneous system $\\mathcal{LS}(A, 0)$ has a unique solution.",
+  "comment": "Since Theorem **Linearly Independent Vectors and Homogeneous Systems** is an equivalence, we can use it to determine the linear independence or dependence of any set of column vectors, just by creating a matrix and analyzing the row-reduced form.  \n  \n### Proof  \n  \n($\\gets$) Suppose that $\\mathcal{LS}(A, 0)$ has a unique solution. Since it is a homogeneous system, this solution must be the trivial solution  \n$x = 0$. By Theorem **Solutions to Linear Systems are Linear Combinations**, this means that the only relation of linear dependence on $S$ is the trivial one. So $S$ is linearly independent.\n\n($\\to$) We will prove the **contrapositive** ($p \\to q = \\neg q \\to \\neg p$). Suppose that $\\mathcal{LS}(A, 0)$ does not have a unique solution. Since it is a homogeneous system, it is consistent (Theorem **Homogeneous Systems are Consistent**), and so must have infinitely many solutions (Corollary **Possible Solution Sets for Linear Systems**). One of these infinitely many solutions must be nontrivial (in fact, almost all of them are), so choose one. By Theorem **Solutions to Linear Systems are Linear Combinations** this nontrivial solution will give a nontrivial relation of linear dependence on $S$, so we can conclude that $S$ is a linearly dependent set.  \n  \n### Example  \n  \nIs the set of vectors  \n$S = \\Bigg\\{$\n$\\begin{bmatrix}\n2\\\\\n-1\\\\\n3\\\\\n4\\\\\n2\n\\end{bmatrix},$\n$\\begin{bmatrix}\n6\\\\\n2\\\\\n-1\\\\\n3\\\\\n4\n\\end{bmatrix},$\n$\\begin{bmatrix}\n4\\\\\n3\\\\\n-4\\\\\n-1\\\\\n2\n\\end{bmatrix}$\n$\\Bigg\\}$  \n  \nlinearly independent or linearly dependent?\n\nTheorem **Linearly Independent Vectors and Homogeneous Systems** suggests we study the matrix, $A$, whose columns are the vectors in $S$. Specifically, we are interested in the size of the solution set for the homogeneous system $\\mathcal{LS}(A, 0)$, so we row-reduce $A$.  \n  \n$A = \\begin{bmatrix}\n2 & 6 & 4\\\\\n-1 & 2 & 3\\\\\n3 & -1 & -4\\\\\n4 & 3 & -1\\\\\n2 & 4 & 2\n\\end{bmatrix}\\xrightarrow{RREF}\n\\begin{bmatrix}\n1 & 0 & -1\\\\\n0 & 1 & 1\\\\\n0 & 0 & 0\\\\\n0 & 0 & 0\\\\\n0 & 0 & 0\n\\end{bmatrix}$  \n  \nNow, $r = 2$, so there are $n - r = 3 - 2 = 1$ free variables and we see that $\\mathcal{LS}(A, 0)$ has infinitely many solutions (Theorem **Homogenous Systems are Consistent**, Theorem **Solution for Consistent Systems using Free Variables**). By Theorem **Linearly Independent Vectors and Homogeneous Systems**, the set $S$ is linearly dependent.\n",
+  "reference": "[First course in Linear Algebra - Linear Independence](http://linear.ups.edu/html/section-LI.html) - Theorem LIVHS",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60070087a5a9a54e30e1b802"
+  },
+  "name": "Relationship between r and n for Linearly Independent Vectors",
+  "type": "Theorem",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "Suppose that $S = \\{v_1, v_2, v_3, . . ., v_n\\} \\subseteq \\mathcal{C}^m$ is a set of vectors and $A$ is the $m \\times n$ matrix whose columns are the vectors in $S$. Let $B$ be a matrix in reduced row-echelon form that is row-equivalent to $A$ and let $r$ denote the number of pivot columns in $B$. Then $S$ is linearly independent if and only if $n = r$.",
+  "comment": "### Proof  \n  \nTheorem **Linearly Independent Vectors and Homogeneous Systems** says the linear independence of $S$ is equivalent to the homogeneous linear system $\\mathcal{LS}(A, 0)$ having a unique solution. Since $\\mathcal{LS}(A, 0)$ is consistent (Theorem **Homogeneous Systems are Consistent**) we can apply Theorem **Relationships between r and n for a consistent system** to see that the solution is unique exactly when $n = r$.  \n  \n### Example  \n  \nIs the set of vectors  \n$S = \\Bigg\\{$\n$\\begin{bmatrix}\n2\\\\\n-1\\\\\n3\\\\\n1\\\\\n0\\\\\n3\n\\end{bmatrix},$\n$\\begin{bmatrix}\n9\\\\\n-6\\\\\n-2\\\\\n3\\\\\n2\\\\\n1\n\\end{bmatrix},$\n$\\begin{bmatrix}\n1\\\\\n1\\\\\n1\\\\\n0\\\\\n0\\\\\n1\n\\end{bmatrix}$\n$\\begin{bmatrix}\n-3\\\\\n1\\\\\n4\\\\\n2\\\\\n1\\\\\n2\n\\end{bmatrix}$\n$\\begin{bmatrix}\n6\\\\\n-2\\\\\n1\\\\\n4\\\\\n3\\\\\n2\n\\end{bmatrix}$\n$\\Bigg\\}$  \n  \nlinearly independent or linearly dependent?\n\nTheorem **Linearly Independent Vectors and Homogeneous Systems** suggests we place these vectors into a matrix as columns and analyze the row-reduced version of the matrix,  \n  \n$A = \\begin{bmatrix}\n2 & 9 & 1 & -3 & 6\\\\\n-1 & -6 & 1 & 1 & -2\\\\\n3 & -2 & 1 & 4 & 1\\\\\n1 & 3 & 0 & 2 & 4\\\\\n0 & 2 & 0 & 1 & 3\\\\\n3 & 1 & 1 & 2 & 2\n\\end{bmatrix}\\xrightarrow{RREF}\n\\begin{bmatrix}\n1 & 0 & 0 & 0 & -1\\\\\n0 & 1 & 0 & 0 & 1\\\\\n0 & 0 & 1 & 0 & 2\\\\\n0 & 0 & 0 & 1 & 1\\\\\n0 & 0 & 0 & 0 & 0\\\\\n0 & 0 & 0 & 0 & 0\n\\end{bmatrix}$  \n  \nNow we need only compute that $r = 4 \\lt 5 = n$ to recognize, via Theorem **Linearly Independent Vectors and Homogeneous Systems** that $S$ is a linearly dependent set.\n",
+  "reference": "[First course in Linear Algebra - Linear Independence](http://linear.ups.edu/html/section-LI.html) - Theorem LIVRN",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60070204a5a9a54e30e1b803"
+  },
+  "name": "More Vectors than Size implies Linear Dependence",
+  "type": "Theorem",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "Suppose that $S = \\{u_1, u_2, u_3, . . ., u_n\\} \\subseteq \\mathbb{C}^m$ and $n \\lt m$. Then $S$ is a linearly dependent set.",
+  "comment": "### Proof  \n  \nForm the $m \\times n$ matrix $A$ whose columns are $u_i, 1 \\leq i \\leq n$. Consider the homogeneous system $\\mathcal{LS}(A, 0)$. By Theorem **Homogeneous System with More Variables than Equations has Infinite solutions** this system has infinitely many solutions. Since the system does not have a unique solution, Theorem **Linearly Independent Vectors and Homogeneous Systems** says the columns of $A$ form a linearly dependent set, as desired.",
+  "reference": "[First course in Linear Algebra - Linear Independence](http://linear.ups.edu/html/section-LI.html) - Theorem MVSLD",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6007037da5a9a54e30e1b804"
+  },
+  "name": "Nonsingular Matrices have Linearly Independent Columns",
+  "type": "Theorem",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "Suppose that $A$ is a square matrix. Then $A$ is nonsingular if and only if the columns of $A$ form a linearly independent set.",
+  "comment": "### Proof  \n  \nThis is a proof where we can chain together equivalences, rather than proving the two halves separately.\n\n$A \\text{ nonsingular} \\iff \\mathcal{LS}(A, 0) \\text{ has a unique solution}$ Definition **Nonsingular Matrix**  \n$\\iff \\text{columns of } A \\text{ are linearly independent}$ Theorem **Linearly Independent Vectors and Homogeneous Systems**\n",
+  "reference": "[First course in Linear Algebra - Linear Independence](http://linear.ups.edu/html/section-LI.html) - Theorem NMLIC",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60096a0c780a9e33e0a042cb"
+  },
+  "name": "Basis for Null Spaces",
+  "type": "Theorem",
+  "description": "Beginner friendly Linear Algebra",
+  "text": "Suppose that $A$ is an $m \\times n$ matrix, and $B$ is a row-equivalent matrix in reduced row-echelon form with $r$ pivot columns. Let $D = \\{d_1, d_2, d_3, . . ., d_r\\}$ and $F = \\{f_1, f_2, f_3, . . ., f_{n-r}\\}$ be the sets of column indices where $B$ does and does not (respectively) have pivot columns. Construct the $n - r$ vectors $z_j, 1 \\leq j \\leq n - r$ of size $n$ as  \n  \n$[z_j]_i = \\begin{cases}\n1 &\\text{if } i \\in F, i = F_j \\\\\n0 &\\text{if } i \\in F, i \\not = F_j \\\\\n-[B]_{k, f_j} &\\text{if } i \\in D, i = d_k\n\\end{cases}$  \n  \nDefine the set $S = \\{z_1, z_2, z_3, . . ., z_{n-r}\\}$.Then  \n  \n1. $\\mathcal{N}(A) =⟨S⟩$.  \n2. $S$ is a linearly independent set.",
+  "comment": "Our aim now is to show that the vectors provided by Theorem **Spanning Sets for Null Spaces** form a linearly independent set, so in one sense they are as efficient as possible a way to describe the null space. Notice that the vectors $z_j, 1 \\leq j \\leq n - r$ first appear in the vector form of solutions to arbitrary linear systems (Theorem **Vector Form of Solutions to Linear Systems**). The exact same vectors appear again in the span construction in the conclusion of Theorem **Spanning Sets for Null Spaces**. Since this second theorem specializes to homogeneous systems the only real difference is that the vector $c$ in Theorem **Vector Form of Solutions to Linear Systems** is the zero vector for a homogeneous system. Finally, Theorem **Basis for Null Spaces** will now show that these same vectors are a linearly independent set  \n  \n### Proof  \n  \nNotice first that the vectors $z_j, 1 \\leq j \\leq n - r$ are exactly the same as the $n - r$ vectors defined in Theorem **Spanning Sets for Null Spaces**. Also, the hypotheses of Theorem **Spanning Sets for Null Spaces** are the same as the hypotheses of the theorem we are currently proving. So it is then simply the conclusion of Theorem **Spanning Sets for Null Spaces** that tells us that $\\mathcal{N}(A) = ⟨S⟩$. That was the easy half, but the second part is not much harder. What is new here is the claim that $S$ is a linearly independent set.  \n  \nTo prove the linear independence of a set, we need to start with a relation of linear dependence and somehow conclude that the scalars involved must all be zero, i.e. that the relation of linear dependence only happens in the trivial fashion. So to establish the linear independence of $S$, we start with  \n$\\alpha_1z_1 + \\alpha_2z_2 + \\alpha_3z_3 + . . . + \\alpha_{n-r}z_{n-r} = 0$.  \n  \nFor each $j, 1 \\leq j \\leq n - r$, consider the equality of the individual entries of the vectors on both sides of this equality in position $f_j$,  \n$0 = [0]_{f_j}$  \n$= [\\alpha_1z_1 + \\alpha_2z_2 + \\alpha_3z_3 + . . . + \\alpha_{n-r}z_{n-r}]_{f_j}$ Definition **Column Vector Equality**  \n$= [\\alpha_1z_1]_{f_j} + [\\alpha_2z_2]_{f_j} + [\\alpha_3z_3]_{f_j} + . . . + [\\alpha_{n-r}z_{n-r}]_{f_j}$ Definition **Column Vector Addition**  \n$= \\alpha_1[z_1]_{f_j} + \\alpha_2[z_2]_{f_j} + \\alpha_3[z_3]_{f_j} + . . . + \\alpha_{j-1}[z_{j-1}]_{f_j} + \\alpha_j[z_j]_{f_j} + \\alpha_{j + 1}[z_{j + 1}]_{f_j} + . . . + \\alpha_{n - r}[z_{n-r}]_{f_j}$ Definition **Column Vector Scalar Multiplication**  \n$= \\alpha_1(0) + \\alpha_2(0) + \\alpha_3(0) + . . . + \\alpha_{j-1}(0) + \\alpha_j(1) + \\alpha_{j + 1}(0) + . . . + \\alpha_{n-r}(0)$ Definition of $z_j$  \n$= \\alpha_j$  \n  \n### ToDo Example\n",
+  "reference": "[First course in Linear Algebra - Linear Independence](http://linear.ups.edu/html/section-LI.html) - Theorem BNS",
+  "__v": 0
+}]
